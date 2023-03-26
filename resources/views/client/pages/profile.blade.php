@@ -1,37 +1,10 @@
 @extends('client.layout.indexlayout')
-@section('title')
-    Jack Nicholson | Earth
-@endsection
 @section('content')
 <body>
-    <div class="profile-container">
-        <div class="cover-img">
-            <img src="{{asset('img/anhbia.jpg')}}" alt="">
-        </div>
-        <div class="profile-details">
-            <div class="pd-left">
-                <div class="pd-row">
-                    <img class="pd-img" src="{{asset('img/user-m.png')}}" alt="">
-                    <div>
-                        <h3>Jack Nicholson</h3>
-                        <p>120 Friends - 20 mutual</p>
-                        <div class="friends">
-                            <img src="{{asset('img/user1.webp')}}">
-                            <img src="{{asset('img/user2.png')}}">
-                            <img src="{{asset('img/user3.png')}}">
-                            <img src="{{asset('img/user-text.png')}}">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pd-right">
-                <button type="button"><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-user"></i></span>Friend</button>
-                <button type="button"> <i class="fa-solid fa-comment-dots"></i> Message</button>
-                <br>
-                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-            </div>
-        </div>
-    </div>
+    {{-- INFOR USER --}}
+    @include('client.pages.profile.inforuser')
+    {{-- END INFOR USER --}}
+
     <div class="profile-info">
         <div class="info-col">
             <div class="profile-intro">
@@ -61,11 +34,11 @@
                     <div><img src="{{asset('img/FullStack.png')}}" alt=""></div>
                 </div>
             </div>
-            <!-- friends -->
+         
             <div class="profile-intro">
-                <div class="title-box">
+                <div class="title-box {{ request()->route()->getName() === 'friends'}}">
                     <h3>Friends</h3>
-                    <a href="#">All Friends</a>
+                    <a href="{{ route('friends')}}">All Friends</a>
                 </div>
                 <p class="many">120 (10 mutual)</p>
                 <div class="friends-box">
@@ -82,7 +55,7 @@
             </div>
         </div>
         <div class="post-col">
-            {{-- post --}}
+            
             @include('client.pages.home.post')
         </div>
     </div>

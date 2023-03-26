@@ -1,5 +1,4 @@
 @extends('client.layout.indexlayout')
-
 @section('title')
     Earth
 @endsection
@@ -10,13 +9,13 @@
     <div class="left-sidebar">
         <div class="imp-links">
             <a href="{{ route('profile')}}" class="img-userss">
-                <img src="{{asset('img/user-m.png')}} {{ Request::route()->getName() === 'profile'}}" alt="">HoVo
+                <img src="{{asset('img/user-m.png')}}" class="{{ Request::route()->getName() === 'profile'}}" alt="">HoVo
             </a>
             <a href="#">
                 <i class="fa-solid fa-radio"></i> Latest News
             </a>
-            <a href="#">
-                <i class="fa-solid fa-user-group"></i> Friends
+            <a href="{{ route('friends')}}">
+                <i class="fa-solid fa-user-group {{ Request::route()->getName() === 'friends'}}"></i> Friends
             </a>
             <!-- <a href="#">
                 <i class="fa-solid fa-people-group"></i> Group
@@ -37,9 +36,9 @@
             <a href="#">
                 <img src="{{asset('img/WebDesign.jpg')}}" alt=""> Web Design Course
             </a>
-            <!-- <a href="#">
-                <img src="/assets/img/FullStack.png" alt=""> Full Stack
-            </a> -->
+            <a href="#">
+                <img src="{{asset('img/FullStack.png')}}" alt=""> Full Stack
+            </a>
             <a href="#" class="all-groups">
                 See all groups
             </a>

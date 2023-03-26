@@ -1,10 +1,18 @@
 var darkBtn = document.getElementById("dark-btn")
-var fas = document.getElementById('post-fas-container');
-window.onclick = function(event1) {
-    if (event1.target == fas) {
-        fas.style.display = "none";
-    }
+// var fas = document.getElementById('post-fas-container');
+// window.onclick = function(event1) {
+//     if (event1.target == fas) {
+//         fas.style.display = "none";
+//     }
+// }
+
+var postrigh = document.querySelector(".posts");
+// home
+function postrighsMenuToggle(){
+    postrigh.classList.toggle("post-right-menu-height");
+    
 }
+
 darkBtn.onclick = function(){
     darkBtn.classList.toggle("dark-btn-on");
     document.body.classList.toggle("dark-theme");

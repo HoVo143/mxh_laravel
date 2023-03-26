@@ -1,8 +1,12 @@
+
+
 <div class="write-post-container">
     <div class="user-profile">
         <img src="{{asset('img/user-m.png')}}" alt="">
         <div>
-            <p>HoVo</p>
+            <div class="{{ Request::route()->getName() === 'profile'}}">
+                <a href="{{ route('profile')}}"><p>HoVo</p></a>
+            </div>
             <!-- <small>Public <i class="fa-solid fa-caret-down"></i></small> -->
             <div class="custom-select">
                 <div class="select">
@@ -32,11 +36,13 @@
         <div class="user-profile">
             <img src="{{asset('img/user-m.png')}}" alt="">
             <div>
-                <p class="name-user">HoVo</p>
+                <div class="{{ request()->route()->getName() === 'profile'}}">
+                    <a href="{{ route('profile')}}"><p class="name-user">HoVo</p></a>
+                </div>
                 <span class="time">June 24 2021, 13:40 pm</span>
             </div>
         </div>
-        <div class="post-right">
+        {{-- <div class="post-right">
             <i class="fas fa-ellipsis-v" onclick="document.getElementById('post-fas-container').style.display='block'"></i>
             <div class="post-fas-container" id="post-fas-container">
                 <div class="post-fas">
@@ -50,13 +56,30 @@
                     </ul>
                 </div>
             </div>
+        </div> --}}
+        <div class="post-right" >
+            <i class="fas fa-ellipsis-v" onclick="postrighsMenuToggle()"></i>
+            <div class="posts">
+                <div class="post-fas-container" id="post-fas-container">
+                    <div class="post-fas">
+                        <ul>
+                            {{-- <div class="remove-post" ><i class="fa-solid fa-xmark"></i></div> --}}
+                            <li><i class="fa-solid fa-bookmark"></i>Save post</li>
+                            <li><i class="fa-regular fa-calendar-xmark"></i>Hide posts</li>
+                            <li><i class="fa-regular fa-bell"></i>Turn on announce this post</li>
+                            {{-- <li><i class="fa-solid fa-ban"></i>Unfollow</li> --}}
+                            <li><i class="fa-solid fa-flag"></i>Article report</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="post-text">
-        <p>Subscribe 
+        <p> 
             <span>@HoVo</span> 
-            youtube channel to watch more videos on 
-            website development and UI designs. 
+            How did you learn your Web developing skill. 
+            OR How are you learning your Web developing skills
             <a href="#">#HoVo</a>
             <a href="#">#DanhNguyen</a> </p>
     </div>
@@ -226,39 +249,6 @@
                     <div class="like"> <i class="fa-solid fa-heart"></i> <span>1000</span> </div>
                     <div class="comments"> <i class="fa-solid fa-message"></i> <span>200</span></div>
                     <div class="shares"><i class="fa-solid fa-share"></i> <span>20</span></div>
-                </div>
-            </div>
-        
-        </div>
-
-        <!-- Xóa cái post-container này -->
-        <div class="post-container">
-            <div class="post-row">
-                <div class="user-profile">
-                    <img src="{{asset('img/user-m.png')}}" alt="">
-                    <div>
-                        <p class="name-user">HoVo</p>
-                        <span class="time">June 24 2021, 13:40 pm</span>
-                    </div>
-                </div>
-                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-            </div>
-            <div class="post-text">
-                <p>Like and share this video with friends, tag
-                    <span>@HoVo</span> 
-                    facebook page on your post. Ask your doubts in the comments 
-                    <a href="#">#HoVo</a>
-                    <a href="#">#DanhNguyen</a> </p>
-            </div>
-            <div class="post-img">
-                <img src="{{asset('img/WebDesign.jpg')}}">
-            </div>
-
-            <div class="post-row">
-                <div class="activity-icons">
-                    <div class="like"> <i class="fa-solid fa-heart"></i> <span>2500</span> </div>
-                    <div class="comments"> <i class="fa-solid fa-message"></i> <span>1103</span></div>
-                    <div class="shares"><i class="fa-solid fa-share"></i> <span>410</span></div>
                 </div>
             </div>
         

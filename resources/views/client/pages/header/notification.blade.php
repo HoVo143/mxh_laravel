@@ -19,7 +19,7 @@
                         <p class="dess">
                             <span class="name-post">Alison Mina</span> 
                             <span class="tt">shared 
-                                <a href="#" class="name">Jackson's</a> post dd dd sss sssss sssss ddd </span>
+                                <a href="#" class="name">Jackson</a> post dd dd sss sssss sssss ddd </span>
                         </p>
                     </div>
                     <!-- text -->
@@ -30,7 +30,7 @@
                         <p class="dess">
                             <span class="name-post">Alison Mina</span> 
                             <span class="tt">shared 
-                                <a href="#" class="name">Jackson's</a> post dd dd sss sssss sssss ddd </span>
+                                <a href="#" class="name">Jackson</a> post dd dd sss sssss sssss ddd </span>
                         </p>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                         <p class="dess">
                             <span class="name-post">Alison Mina</span> 
                             <span class="tt">shared 
-                                <a href="#" class="name">Jackson's</a> post dd dd sss sssss sssss ddd </span>
+                                <a href="#" class="name">Jackson</a> post dd dd sss sssss sssss ddd </span>
                         </p>
                     </div>
                     
@@ -61,7 +61,7 @@
                         <p class="dess">
                             <span class="name-post">Alison Mina</span> 
                             <span class="tt">shared 
-                                <a href="#" class="name">Jackson's</a> post dd dd sss sssss sssss ddd </span>
+                                <a href="#" class="name">Jackson</a> post dd dd sss sssss sssss ddd </span>
                         </p>
                     </div>
                     
@@ -73,7 +73,7 @@
                         <p class="dess">
                             <span class="name-post">Alison Mina</span> 
                             <span class="tt">shared 
-                                <a href="#" class="name">Jackson's</a> post dd dd sss sssss sssss ddd </span>
+                                <a href="#" class="name">Jackson</a> post dd dd sss sssss sssss ddd </span>
                         </p>
                     </div>
                     {{-- text --}}
@@ -84,7 +84,7 @@
                         <p class="dess">
                             <span class="name-post">Alison Mina</span> 
                             <span class="tt">shared 
-                                <a href="#" class="name">Jackson's</a> post dd dd sss sssss sssss ddd </span>
+                                <a href="#" class="name">Jackson</a> post dd dd sss sssss sssss ddd </span>
                         </p>
                     </div>
                     {{-- text --}}
@@ -95,7 +95,7 @@
                         <p class="dess">
                             <span class="name-post">Alison Mina</span> 
                             <span class="tt">shared 
-                                <a href="#" class="name">Jackson's</a> post dd dd sss sssss sssss ddd </span>
+                                <a href="#" class="name">Jackson</a> post dd dd sss sssss sssss ddd </span>
                         </p>
                     </div>
                 </div>

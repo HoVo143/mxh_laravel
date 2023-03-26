@@ -85,9 +85,13 @@ body{
     border-radius: 3px;
     margin-left: 10px;
     cursor: pointer;
+    font-weight: 700;
+}
+.pd-right button:hover{
+    opacity: .7;
 }
 .pd-right button i {
-    margin-right: 5px;
+    margin-right: 7px;
     font-size: 15px;
 }
 .pd-right button:first-child {
@@ -108,7 +112,26 @@ body{
 .pd-right i {
     font-size: 20px;
 }
-
+.pd-bottom{
+    border-top: 1px solid saddlebrown;
+    padding-top: 10px;
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.pd-bottom a{
+    text-decoration: none;
+    color: var(--color-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+.pd-bottom a:hover{
+    opacity: .7;
+}
+.pd-bottom .active{
+    color: #1846f2;
+}
 .profile-info{
     display: flex;
     justify-content: space-between;

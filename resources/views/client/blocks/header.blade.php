@@ -1,5 +1,4 @@
 
-
 <nav>
     <div class="nav-left">
             <a href="{{ route('home')}}" style="text-decoration: none">
@@ -33,6 +32,7 @@
                     <img class="{{ Request::route()->getName() === 'profile'}}" src="{{asset('img/user-m.png')}}" alt="">
                     <a href="{{ route('profile')}}" style="text-decoration: none">
                         <p class="name-profile">HoVo</p>
+
                     </a>
             </div>
             <hr>
