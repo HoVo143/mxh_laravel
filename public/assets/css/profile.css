@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --body-color: #efefef;
+    --nav-color:#1846f2;
+    --bg-color:#fff;
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+    --color-color: #000;
+}
+.dark-theme{
+    --body-color: #0a0a0a;
+    --nav-color:#000;
+    --bg-color:#1f1f1f;
+    --color-color:#fff;
+}
+body{
+    text-decoration: none;
+    height: 100vh;
+    width: 100%; 
+    background: var(--body-color);
+    transition: background 0.3s;
+}
+
+.profile-container{
+    margin-top: 55px;
+    padding: 0 15%;
+    color: var(--color-color);
+}
+.cover-img{
+    height: 350px;
+}
+.cover-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+.profile-details{
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.profile-details .pd-row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.profile-details .pd-row .pd-img{
+    width: 120px;
+    margin-right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid salmon;
+}
+.profile-details .pd-row div h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.profile-details .pd-row p {
+    margin-top: 5px;
+    font-size: 13px;
+}
+.friends img{
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.pd-right button{
+    background: salmon;
+    border: 0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.pd-right button i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+.pd-right button:first-child {
+    background: #e4e6ed;
+    color: #000;
+}
+.pd-right{
+    text-align: right;
+}
+.pd-right a{
+    background: #e4e6ed;
+    border-radius: 4px;
+    padding: 2px 10px;
+    display: inline-flex;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.pd-right i {
+    font-size: 20px;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 0 15%;
+}
+.info-col{
+    flex-basis: 33%;
+}
+.profile-intro{
+    background: var(--bg-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.profile-intro h3{
+    font-weight: 600;
+    color: var(--color-color);
+}
+.intro-text{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 15px;
+    color: var(--color-color);
+}
+.intro-text .bieucam{
+    font-size: 15px;
+}
+.profile-intro hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 24px 0;
+}
+.profile-intro ul li {
+    list-style: none;
+    font-size: 15x;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    color: var(--color-color);
+}
+.profile-intro ul li i {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-box a{
+    text-decoration: none;
+    color: salmon;
+    font-size: 14px;
+}
+.photo-box{
+    display: grid;
+    grid-template-columns:  repeat(3, auto);
+    grid-gap:10px;
+    margin-top: 15px;
+}
+.photo-box div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.friends-box{
+    display: grid;
+    grid-template-columns:  repeat(3, auto);
+    grid-gap:10px;
+    margin-top: 15px;
+}
+
+.friends-box div img{
+    width: 100%;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.friends-box div {
+    position: relative;
+}
+.friends-box p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--color-color);
+}
+.profile-intro p {
+    font-size: 14px;
+    color: var(--color-color);
+}
+/* write-post-container------------------------------------------- */
+.post-col{
+    flex-basis: 65%;
+}
+.write-post-container{
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 6px;
+    padding: 20px;
+    color: var(--color-color);
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user-profile p {
+    margin-bottom: -2px;
+    font-weight: 500;
+    color: var(--color-color);
+}
+.user-profile small{
+    font-size: 12px;
+}
+.post-input-container{
+    padding-left: 55px;
+    padding-top: 20px;
+}
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+    color: var(--color-color);
+}
+.add-post-links{
+    display: flex;
+    margin-top: 10px;
+}
+.add-post-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--color-color);
+    margin-right: 30px;
+    font-size: 13px;
+    
+}
+.fa-video{
+    color: red;
+}
+.fa-camera{
+    color:darkgreen;
+}
+.fa-face-laugh{
+    color:darkorange;
+}
+.add-post-links a i {
+    width: 20px;
+    margin-right: 4px;
+    font-size: 15px;
+}
+.post-container{
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 6px;
+    padding: 20px;
+    color: var(--color-color);
+    margin: 20px 0;
+}
+.user-profile span {
+    font-size: 13px;
+    color: #9a9a9a;
+}
+.post-text{
+    color: var(--color-color);
+    margin: 15px 0;
+    font-size: 15px;
+}
+.post-text span{
+    color: var(--color-color);
+    font-weight: 500;
+}
+.post-text a{
+    text-decoration: none;
+    color: #1876f2;
+}
+.post-img img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.post-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-heart{
+    color: crimson;
+}
+.fa-share{
+    color: #1876f2;
+}
+.activity-icons div i {
+    width: 18px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.activity-icons div{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.post-profile-icon {
+    display: flex;
+    align-items: center;
+}
+.post-profile-icon img{
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.post-row a{
+    color: var(--color-color);
+}
