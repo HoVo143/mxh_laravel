@@ -407,7 +407,19 @@ select::-ms-expand {
     margin-bottom: 5px;
     cursor: pointer;
 }
-
+.post-btn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--header-color);
+    padding: 5px 15px;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 700;
+}
+.post-btn:hover{
+    opacity: .9;
+}
 .post-row{
     position: relative;
 }
@@ -415,6 +427,7 @@ select::-ms-expand {
 .posts{
     position: absolute;
     width: 90%;
+    /* display: none; */
     max-width: 300px;
     background: var(--bg-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);

@@ -25,6 +25,7 @@
             <a href="#"><i class="fa-solid fa-video"></i> Live Video </a>
             <a href="#"><i class="fa-solid fa-camera"></i> Photo/Video </a>
             <a href="#"><i class="fa-regular fa-face-laugh"></i> Feling/Activity </a>
+            {{-- <div class="post-btn">Post</div> --}}
 
             <a href="#"><button class="post-input">Post</button></a>
         </div>
@@ -59,7 +60,8 @@
         </div> --}}
         <div class="post-right" >
             <i class="fas fa-ellipsis-v" onclick="postrighsMenuToggle()"></i>
-            <div class="posts">
+            
+            <div class="posts" id="postss">
                 <div class="post-fas-container" id="post-fas-container">
                     <div class="post-fas">
                         <ul>
@@ -209,7 +211,8 @@
                             <div class="reply-cmt">
                                 <img src="{{asset('img/user-m.png')}}" alt="">
                                 <textarea name="" id="" cols="3" rows="1" placeholder="write a comment..."></textarea>
-                                <button class="post-btn">Post</button>
+                                <div class="post-btn">Post</div>
+             
                             </div>
                         </div>
                     </form>
