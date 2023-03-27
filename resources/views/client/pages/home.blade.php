@@ -51,7 +51,7 @@
         @include('client.pages.home.post')
     </div>
 
-    <!--  load view se de o day -->
+    <!--  load view se de o day --> 
 
     <!-- ----------------right-sidebar------------ -->
     <div class="right-sidebar">

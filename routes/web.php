@@ -24,14 +24,16 @@ use Illuminate\Support\Facades\Route;
 // })->name('register');
 
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
+
+// CLIENT USER
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/profile/friends', [FriendController::class, 'index'])->name('friends');
 
 
-
+// ADMIN
 Route::prefix('admin')->group(function (){ // thêm /admin sẵn
 
     Route::get('/', function () {

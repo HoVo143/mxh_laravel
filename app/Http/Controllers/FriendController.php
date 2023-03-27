@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class FriendController extends Controller
 {
     public function index(){
-        return view('client.pages.friends');
+        return view('client.pages.profile.user.friend');
     }
 }

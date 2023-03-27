@@ -33,7 +33,7 @@
                     <input type="password" class="form-control" id="password" required>
                 </div>
                 <button style="width: 100%; font-size:23px"  type="submit" class="btn my-3 text-white bg-danger">Submit</button>
-                <p class="text-center mt-3 {{ Request::route()->getName() === 'register'}}">
+                <p class="text-center mt-3 {{ request()->route()->getName() === 'register'}}">
                     don't have an account? <a href="{{ route('register')}}">register now</a></p>
             </form>
         </div>

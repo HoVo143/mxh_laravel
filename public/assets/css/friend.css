@@ -43,6 +43,8 @@
     width: 50%;
     cursor: pointer;
     border-radius: 5px;
+    border: 2px solid #fff;
+
 }
 .friends-friends div {
     width: 100%;
@@ -71,7 +73,7 @@
     width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     height: 175px;
-    background-color: var(--body-color);
+    background-color: var(--bg-color);
     padding: 5px 5px;
     border-radius: 10px;
 }
@@ -98,8 +100,12 @@
     padding: 8px 0;
     border-radius: 5px;
     background: salmon;
-    border: 0;
+    border: 2px solid #fff;
     color: #fff;
+    transition: 0.3s;
+}
+.info-bottom button:hover{
+    opacity: .8;
 }
 .info-bottom button i{
     margin-right: 5px;
@@ -111,7 +117,8 @@
 .friends-friends .info-friends .container-info img{
     width: 80px;
     height: 80px;
-    border: 1px solid salmon;
+    border: 2px solid #fff;
+
 }
 .friends-friends .info-friends .container-info .info-top h4{
     font-size: 17px;
@@ -120,13 +127,14 @@
 .friends-friends .info-friends .container-info .infos{
     width: 60%;
     margin-left: -20px;
-    height: 70px;
+    height: 65px;
     overflow: hidden;
 }
 
 .infos ul li{
     margin-top: 5px;
     color: var(--color-color);
+    font-size: 14px;
 }
 .infos ul li i{
     width: 21px;

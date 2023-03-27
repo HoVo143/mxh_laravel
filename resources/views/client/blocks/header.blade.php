@@ -2,7 +2,7 @@
 <nav>
     <div class="nav-left">
             <a href="{{ route('home')}}" style="text-decoration: none">
-                <h1 class="logo {{ Request::route()->getName() === 'home'}}">Earth</h1>
+                <h1 class="logo {{ request()->route()->getName() === 'home'}}">Earth</h1>
             </a>
         <ul>
             {{-- ---------------MESSENGER---------------- --}}
@@ -29,7 +29,7 @@
         </div>
         <div class="settings-menu-inner">
             <div class="user-profile">
-                    <img class="{{ Request::route()->getName() === 'profile'}}" src="{{asset('img/user-m.png')}}" alt="">
+                    <img class="{{ request()->route()->getName() === 'profile'}}" src="{{asset('img/user-m.png')}}" alt="">
                     <a href="{{ route('profile')}}" style="text-decoration: none">
                         <p class="name-profile">HoVo</p>
 
