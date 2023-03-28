@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\FriendController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ImageController;
+use App\Http\Controllers\IntroduceController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
@@ -27,10 +29,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
-// CLIENT USER
+
+// home
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
-Route::get('/profile/friends', [FriendController::class, 'index'])->name('friends');
+
+// CLIENT USER
+Route::prefix('user')->group(function (){ // thêm /user sẵn
+    Route::get('/', [ProfileController::class, 'index'])->name('profile');
+    Route::get('/friends', [FriendController::class, 'index'])->name('friends');
+    Route::get('/image', [ImageController::class, 'index'])->name('image');
+    Route::get('/introduce', [IntroduceController::class, 'index'])->name('introduce');
+});
 
 
 // ADMIN

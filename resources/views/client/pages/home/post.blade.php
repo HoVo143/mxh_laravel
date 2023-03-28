@@ -117,33 +117,36 @@
                                     <div class="user-container">
                                         <div class="name-user-cmt">
                                             <h4>HoVo 
-                                                <span class="time"> <!-- time -->
+                                                {{-- <span class="time"> 
                                                     6 hours 
-                                                </span>
+                                                </span> --}}
                                             </h4>
                                             <p class="cmtt">youtube channel to watch more videos on 
                                                 website development and UI designs. 
                                             </p>
                                         </div>
-                                        <div class="edit-right">
-                                            <div class="dropdown">
-                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                <div class="dropdown-content">
-                                                    <a href="#"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
-                                                    <a href="#"><i class="fa-solid fa-trash-can"></i>Remove</a>
-                                                    <!-- <a href="#">Link 3</a> -->
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="feedback">
                                         <!-- like -->
                                         <div class="like"> <i class="fa-regular fa-heart"></i> <span>100</span> </div>
-                                    
+                                        <div class="reply"><span>Reply</span> </div>
+                                        <div class="edit" onclick="editbtnMenuToggle()"><span>Edits</span> 
+                                            <div class="edit-right">
+                                                <div class="dropdown">
+                                                    <div class="dropdown-content">
+                                                        <span><i class="fa-solid fa-pen-to-square"></i>Edit</span>
+                                                        <span><i class="fa-solid fa-trash-can"></i>Remove</span>
+                                                        <!-- <a href="#">Link 3</a> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="time"> <span> 6 hours </span></div>
+                    
                                         <!-- feedback -->
-                                        <div class="fee" onclick="document.querySelector('.timess').style.display='block'"> reply
+                                        {{-- <div class="fee" onclick="document.querySelector('.timess').style.display='block'"> reply
                                             <div class="timess" id="timess">
-                                                    <!-- user feedback-2 -->
+                                                 
                                                     <div class="feedback-2">
                                                         <div class="user-cmt-2">
                                                             <img src="{{asset('img/user-m.png')}}" alt="">
@@ -151,7 +154,7 @@
                                                             <div class="user-container">
                                                                 <div class="name-user-cmt">
                                                                     <h4>HoVo 
-                                                                        <span class="time"> <!-- time -->
+                                                                        <span class="time"> 
                                                                             6 hours 
                                                                         </span>
                                                                     </h4>
@@ -165,7 +168,7 @@
                                                                         <div class="dropdown-content">
                                                                             <a href="#"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
                                                                             <a href="#"><i class="fa-solid fa-trash-can"></i>Remove</a>
-                                                                            <!-- <a href="#">Link 3</a> -->
+                                                                      
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -174,14 +177,11 @@
                                                         </div>
                                                         <div class="feedback">
                                                                 <div class="like"> <i class="fa-regular fa-heart"></i> <span>20</span> </div>
-                                                                <!-- feedback -->
+                                                            
                                                                 <div class="fee"> reply </div>
                                                             
                                                         </div>
                                                     </div>
-
-
-                                                    <!-- comment feedback-2 -->
                                                     <div class="replys-cmt">
                                                         <div class="icon-cmt">
                                                             <i class="fa-regular fa-image"></i>
@@ -195,7 +195,7 @@
                                                         </div>
                                                     </div>
                                             </div> 
-                                        </div>
+                                        </div> --}}
 
                                     </div>
                                 </div>

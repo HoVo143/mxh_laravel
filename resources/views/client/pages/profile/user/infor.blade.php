@@ -38,14 +38,14 @@
             <li class="{{ request()->route()->getName() === 'profile' ? 'active': '' }}">
                 <a href="{{ route('profile')}}">Posts</a>
             </li>
-            <li>
-                <a href="#">Introduce</a>
+            <li class="{{ Request::route()->getName() === 'introduce' ? 'active': '' }}">
+                <a href="{{ route('introduce')}}">Introduce</a>
             </li>
             <li class="{{ Request::route()->getName() === 'friends' ? 'active': '' }}">
                 <a href="{{ route('friends')}}">Friends</a>
             </li>
-            <li>
-                <a href="#">Image</a>
+            <li class="class="{{ Request::route()->getName() === 'image' ? 'active': '' }}">
+                <a href="{{ route('image')}}">Image</a>
             </li>
             <li>
                 <a href="#"><i class="fa-solid fa-ellipsis"></i></a>

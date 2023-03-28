@@ -508,7 +508,7 @@ select::-ms-expand {
 
 
 
-/* cmt */
+/* -------------------------------------------cmt --------------------------------------------------------------*/
 .section-cmt{
     position: fixed; 
     z-index: 1; 
@@ -519,17 +519,17 @@ select::-ms-expand {
     height: 100%; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.6); 
-    padding: 70px 28%;
+    padding: 8% 22%;
 }
 .cmt-btn{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 630px;
+    width: 850px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
     background: var(--bg-color);
     border-radius: 10px;
-    border-bottom: 2px solid salmon;
+    /* border-bottom: 2px solid salmon; */
 }
 .cmt-btn  .container-cmt .name-cmt{
     padding: 17px 0;
@@ -542,6 +542,7 @@ select::-ms-expand {
     margin-top: 7px;
     display: flex;
     cursor: pointer;
+    position: relative;
 }
 .feedback .fee{
     margin-left: 9px;
@@ -550,11 +551,22 @@ select::-ms-expand {
 .feedback .like{
     font-size: 13px;
 }
+.feedback .reply{
+    font-size: 13px;
+    margin-left: 13px;
+
+}
+.feedback .time{
+    font-size: 13px;
+    color: #9a9a9a;
+    font-weight: 600;
+    margin-left: 13px;
+}
 .user-cmt-2{
     display: flex;
     
 }
-.timess{
+/* .timess{
     margin-top: 7px;
     width: 330px;
     display: none;
@@ -565,10 +577,10 @@ select::-ms-expand {
 .timess .feedback-2{
     margin: 15px 0px;
     font-size: 13px;
-}
+} */
 .cmt-btn form .view-user{
     overflow: auto;
-    width:520px;
+    width:800px;
     height: 350px;
 }
 .view-user::-webkit-scrollbar{
@@ -663,50 +675,46 @@ select::-ms-expand {
 .user-container{
     display: flex;
 }
+
+/*---------------------- edit right------------------------------------------ */
+.feedback .edit {
+    font-size: 13px;
+    margin-left: 13px;
+}
 .edit-right{
-    cursor: pointer;
-    margin-left: 8px;
-    font-size: 18px;
-    margin-top: 1px;
-}
-.dropdown {
     position: absolute;
-    display: inline-block;
+    width: 50%;
+    max-width: 300px;
+    background: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 15px;
+    right: 120px;
+    max-height: 0;
 }
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--bg-color);
-    min-width: 200px;
-    z-index: 1;
-    top: 10px;
-    right: 0;
-    border-radius: 7px;
-    padding: 7px 7px;
-    border: 1px solid #efefef;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
+.edit-menu-height{
+    max-height: 250px;
 }
-  
-.dropdown-content a {
-    color: var(--color-color);
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 10px 10px;
-    text-decoration: none;
-    display: block;
-    font-size: 12px;
-  }
-.dropdown-content a i{
-    width: 25px;
-}  
-.dropdown-content a:hover {
-    background-color:var(--cmt-color);
-
 }
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown-content span{
+    padding: 8px 5px;
+    font-size: 14px;
 }
 
-
+.dropdown-content span i{
+    /* margin-right: 5px; */
+    width: 20px;
+}
+.dropdown-content span:hover{
+    background: var(--cmt-color);
+    border-radius: 5px;
+}
 /* text */
 /*
 .user-container{

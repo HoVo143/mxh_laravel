@@ -1,18 +1,4 @@
 var darkBtn = document.getElementById("dark-btn")
-// var fas = document.getElementById('post-fas-container');
-// window.onclick = function(event1) {
-//     if (event1.target == fas) {
-//         fas.style.display = "none";
-//     }
-// }
-
-var postrigh = document.querySelector(".posts");
-// home
-function postrighsMenuToggle(){
-    postrigh.classList.toggle("post-right-menu-height");
-    
-}
-
 darkBtn.onclick = function(){
     darkBtn.classList.toggle("dark-btn-on");
     document.body.classList.toggle("dark-theme");
@@ -39,6 +25,7 @@ else if(localStorage.getItem("theme") == "dark")
 else{
     localStorage.setItem("theme", "light");
 }
+
 // comment
 var comment = document.getElementById('timess');
 window.onclick = function(event) {
@@ -46,11 +33,24 @@ window.onclick = function(event) {
         comment.style.display = "none";
     }
 }
-
 // comment trong comment
 var modal = document.getElementById('section-cmt');
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+// home
+var postrigh = document.querySelector(".posts");
+function postrighsMenuToggle(){
+    postrigh.classList.toggle("post-right-menu-height");
+    
+}
+
+// home edit
+var editbtn = document.querySelector(".edit-right");
+function editbtnMenuToggle(){
+    editbtn.classList.toggle("edit-menu-height");
+    
 }
