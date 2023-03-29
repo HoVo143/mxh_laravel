@@ -9,17 +9,17 @@
     <div class="left-sidebar">
         <div class="imp-links">
             <a href="{{ route('profile')}}" class="img-userss">
-                <img src="{{asset('img/user-m.png')}}" class="{{ Request::route()->getName() === 'profile'}}" alt="">HoVo
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-radio"></i> Latest News
+                <img src="{{asset('img/user-m.png')}}" alt="">HoVo
             </a>
             <a href="{{ route('friends')}}">
-                <i class="fa-solid fa-user-group {{ Request::route()->getName() === 'friends'}}"></i> Friends
+                <i class="fa-solid fa-user-group "></i> Friends
             </a>
             <!-- <a href="#">
                 <i class="fa-solid fa-people-group"></i> Group
             </a> -->
+            <a href="#">
+                <i class="fa-solid fa-gamepad"></i> Games
+            </a>
             <a href="#">
                 <i class="fa-solid fa-shop"></i> Marketplace
             </a>

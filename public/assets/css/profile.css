@@ -31,14 +31,20 @@ body{
     padding: 0 15%;
     color: var(--color-color);
 }
-.cover-img{
+
+.profile-container .cover-img{
     height: 350px;
+    width: auto;
+    
 }
 .cover-img img{
     width: 100%;
     height: 100%;
     border-radius: 6px;
     margin-bottom: 14px;
+    object-fit: contain;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+
 }
 .profile-details{
     background: var(--bg-color);
@@ -196,11 +202,23 @@ body{
     grid-template-columns:  repeat(3, auto);
     grid-gap:10px;
     margin-top: 15px;
+    height: 215px;
+    overflow: hidden;
+}
+.photo-box div{
+    width: 100px;
+    height: 100px;
 }
 .photo-box div img {
     width: 100%;
     height: 100%;
     cursor: pointer;
+    image-rendering: pixelated; /*Làm sắc nét hình ảnh*/
+    object-fit: contain;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    overflow: hidden;
+    /* border: 1px solid #fff; */
 }
 
 .friends-box{
@@ -208,20 +226,29 @@ body{
     grid-template-columns:  repeat(3, auto);
     grid-gap:10px;
     margin-top: 15px;
+    height: 385px;
+    overflow: hidden;
 }
 
 .friends-box div img{
     width: 100%;
-    padding-bottom: 20px;
+    height: 100%;
+    /* padding-bottom: 20px; */
+    image-rendering: pixelated; /*Làm sắc nét hình ảnh*/
     cursor: pointer;
+    /* border: 1px solid #fff; */
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: contain;
+
 }
 .friends-box div {
-    position: relative;
+    width: 100px;
+    height: 100px;
 }
 .friends-box p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    text-align: center;
     color: var(--color-color);
 }
 .profile-intro p {

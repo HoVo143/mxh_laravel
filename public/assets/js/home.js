@@ -41,7 +41,7 @@ window.onclick = function(event) {
     }
 }
 
-// home
+// posts edit comment
 var postrigh = document.querySelector(".posts");
 function postrighsMenuToggle(){
     postrigh.classList.toggle("post-right-menu-height");
@@ -49,8 +49,8 @@ function postrighsMenuToggle(){
 }
 
 // home edit
-var editbtn = document.querySelector(".edit-right");
-function editbtnMenuToggle(){
-    editbtn.classList.toggle("edit-menu-height");
+// var editbtn = document.querySelector(".edit-right");
+// function editbtnMenuToggle(){
+//     editbtn.classList.toggle("edit-menu-height");
     
-}
+// }

@@ -18,3 +18,6 @@ function settingsMenuToggle(){
     settingsmenu.classList.toggle("settings-menu-height");
     
 }
+
+
+  
