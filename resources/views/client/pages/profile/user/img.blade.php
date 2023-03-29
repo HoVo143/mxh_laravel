@@ -5,7 +5,7 @@
 {{-- END INFOR USER --}}
 
 <div class="profile-infos">
-    
+    @include('client.pages.profile.include.image')
 </div>
 
 @endsection

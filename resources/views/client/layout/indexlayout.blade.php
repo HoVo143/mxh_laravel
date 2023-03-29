@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{{asset('assets/css/header.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/profile.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/friend.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/image.css')}}">
+
 
 
     <title>@yield('title')</title>
@@ -33,7 +35,7 @@
 
     <script src="{{asset('assets/js/home.js')}}"></script>
     <script src="{{asset('assets/js/header.js')}}"></script>
-    <script src="{{asset('assets/js/ttcmt.js')}}"></script>
+    <script src="{{asset('assets/js/image.js')}}"></script>
 
 </body>
 </html>

@@ -47,6 +47,5 @@
     </div>
 </div>
 <div class="post-col">
-    
-    @include('client.pages.home.post')
+    @include('client.pages.profile.include.user_post')
 </div>

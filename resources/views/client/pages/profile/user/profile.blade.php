@@ -6,7 +6,7 @@
     {{-- END INFOR USER --}}
 
     <div class="profile-info">
-        @include('client.pages.profile.profiles')
+        @include('client.pages.profile.include.profiles')
     </div>
 </body>
 

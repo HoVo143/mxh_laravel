@@ -34,7 +34,8 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // CLIENT USER
-Route::prefix('user')->group(function (){ // thêm /user sẵn
+Route::prefix('user')->group( function ()
+{ // thêm /user sẵn
     Route::get('/', [ProfileController::class, 'index'])->name('profile');
     Route::get('/friends', [FriendController::class, 'index'])->name('friends');
     Route::get('/image', [ImageController::class, 'index'])->name('image');

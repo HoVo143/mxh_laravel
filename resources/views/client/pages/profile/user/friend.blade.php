@@ -5,7 +5,7 @@
 {{-- END INFOR USER --}}
 
 <div class="profile-infos">
-    @include('client.pages.profile.friend')
+    @include('client.pages.profile.include.friend')
 </div>
 
 @endsection

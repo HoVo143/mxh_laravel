@@ -109,12 +109,6 @@
                     </div>
                 </div>
             </div>
-            <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
-            <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
-            <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
-            <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
-            <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
-            <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
             {{-- end text xoa cai nay --}}
         </div>
     </div>
