@@ -91,7 +91,7 @@
         <div class="add-sidebar-title">
             <div class="online-list">
                 <div class="online">
-                    <img src="{{asset('img/user2.png')}}" alt="">
+                    <a href="{{route('people.profile')}}"><img src="{{asset('img/user2.png')}}" alt=""></a>
                 </div>
                 <div class="add">
                     <p>Jacksonsss</p>
@@ -114,13 +114,20 @@
         </div>
         
         <div class="sidebar-title-chat">
+            {{-- bản chính --}}
             <div class="online-list">
                 <div class="online">
-                    <img src="{{asset('img/1.jpg')}}" alt="">
+                    {{-- link nè --}}
+                    <a href="{{route('people.profile')}}">
+                        <img src="{{asset('img/1.jpg')}}" alt="">
+                    </a>
                 </div>
                 <p>Alison Mina</p>
             </div>
-            <!-- text -->
+            {{-- end bản chính --}}
+
+
+            {{-- text xoa cai nay --}}
             <div class="online-list">
                 <div class="online">
                     <img src="{{asset('img/img-2.jpg')}}" alt="">
@@ -139,6 +146,8 @@
                 </div>
                 <p>Ned</p>
             </div>
+            {{-- end text xoa cai nay --}}
+
         </div>
         
     </div>

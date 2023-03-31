@@ -46,7 +46,8 @@
     border-radius: 5px;
     border: 2px solid #fff;
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-
+    image-rendering: pixelated; /*Làm sắc nét hình ảnh*/
+    object-fit: contain;
 }
 .friends-friends div {
     width: 100%;

@@ -1,8 +1,9 @@
 @extends('client.layout.indexlayout')
 @section('content')
-{{-- INFOR USER --}}
-@include('client.pages.profile.user.infor')
-{{-- END INFOR USER --}}
+
+ {{-- INFOR PEOPLE --}}
+ @include('client.pages.profile.people.infopeople')
+ {{-- END INFOR PEOPLE --}}
 
 <div class="profile-infos">
     <div class="info-cols">

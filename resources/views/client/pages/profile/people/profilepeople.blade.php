@@ -1,30 +1,22 @@
 @extends('client.layout.indexlayout')
 @section('content')
 <body>
-    {{-- INFOR USER --}}
-    @include('client.pages.profile.user.infor')
-    {{-- END INFOR USER --}}
+    {{-- INFOR PEOPLE --}}
+    @include('client.pages.profile.people.infopeople')
+    {{-- END INFOR PEOPLE --}}
 
     <div class="profile-info">
         <div class="info-col">
             <div class="profile-intro">
                 <h3>Life</h3>
-                <p class="intro-text">Believe in youself and you can do unbelievable things.
+                <p class="intro-text">CongDanh CongDanh CongDanh CongDanh CongDanh CongDanh CongDanh CongDanh.
                     <i class="fa-regular bieucam fa-face-laugh"></i></p>
                 <hr>
-               
-                {{-- <ul>
-                    <li><i class="fa-solid fa-briefcase"></i>Director at 99media Ltd</li>
-                    <li><i class="fa-solid fa-building-columns"></i>Studied at Amity University</li>
-                    <li><i class="fa-solid fa-graduation-cap"></i>Went to DPS Delhi</li>
-                    <li><i class="fa-solid fa-house"></i>Lives in HCM CITY, VIETNAM </li>
-                    <li><i class="fa-solid fa-location-dot"></i>From HCM CITY, VIETNAM</li>
-                </ul> --}}
             </div>
             <div class="profile-intro">
                 <div class="title-box">
                     <h3>Photos</h3>
-                    <a href="{{ route('image')}}">All Photos</a>
+                    <a href="{{ route('people.image')}}">All Photos</a>
                 </div>
                 <div class="photo-box">
                     {{-- bản chính --}}
@@ -46,7 +38,7 @@
             <div class="profile-intro">
                 <div class="title-box">
                     <h3>Friends</h3>
-                    <a href="{{ route('friends')}}">All Friends</a>
+                    <a href="{{ route('people.friends')}}">All Friends</a>
                 </div>
                 <p class="many">120 (10 mutual)</p>
                 <div class="friends-box">
@@ -71,8 +63,8 @@
                 </div>
             </div>
         </div>
-        <div class="post-col">
-            @include('client.pages.profile.include.user_post')
+        <div class="post-col" style="margin-top: -20px">
+            @include('client.pages.profile.include.people_post')
         </div>
     </div>
 </body>

@@ -27,17 +27,28 @@ else{
 }
 
 // comment
-var comment = document.getElementById('timess');
-window.onclick = function(event) {
-    if (event.target == comment) {
-        comment.style.display = "none";
-    }
-}
+// var comment = document.getElementById('timess');
+// window.onclick = function(event) {
+//     if (event.target == comment) {
+//         comment.style.display = "none";
+//     }
+// }
 // comment trong comment
 var modal = document.getElementById('section-cmt');
+var albums = document.getElementById('id01'); // albums
+var EDIT_USER = document.getElementById('EDIT_USER'); //EDIT USER
 window.onclick = function(event) {
+    // comment
     if (event.target == modal) {
         modal.style.display = "none";
+    }
+    // albums
+    if (event.target == albums) {
+        albums.style.display = "none";
+    }
+    //EDIT USER
+    if (event.target == EDIT_USER) {
+        EDIT_USER.style.display = "none";
     }
 }
 
@@ -54,3 +65,4 @@ function postrighsMenuToggle(){
 //     editbtn.classList.toggle("edit-menu-height");
     
 // }
+

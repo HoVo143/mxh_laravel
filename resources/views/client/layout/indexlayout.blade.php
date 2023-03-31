@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="{{asset('assets/css/profile.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/friend.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/image.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/introdu.css')}}">
+
 
 
 
@@ -36,6 +38,8 @@
     <script src="{{asset('assets/js/home.js')}}"></script>
     <script src="{{asset('assets/js/header.js')}}"></script>
     <script src="{{asset('assets/js/image.js')}}"></script>
+    <script src="{{asset('assets/js/info.js')}}"></script>
+    <script src="{{asset('assets/js/introdu.js')}}"></script>
 
 </body>
 </html>

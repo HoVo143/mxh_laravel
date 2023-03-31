@@ -1,11 +1,15 @@
 <?php
 
 use App\Http\Controllers\FriendController;
+use App\Http\Controllers\FriendPeopleController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\ImagePeopleController;
 use App\Http\Controllers\IntroduceController;
+use App\Http\Controllers\IntroducePeopleController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProfilePeopleController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
@@ -42,6 +46,14 @@ Route::prefix('user')->group( function ()
     Route::get('/introduce', [IntroduceController::class, 'index'])->name('introduce');
 });
 
+// CLIENT PEOPLE
+Route::prefix('people')->group( function ()
+{ // thêm /user sẵn
+    Route::get('/', [ProfilePeopleController::class, 'index'])->name('people.profile');
+    Route::get('/friends', [FriendPeopleController::class, 'index'])->name('people.friends');
+    Route::get('/images', [ImagePeopleController::class, 'index'])->name('people.image');
+    Route::get('/introduce', [IntroducePeopleController::class, 'index'])->name('people.introduce');
+});
 
 // ADMIN
 Route::prefix('admin')->group(function (){ // thêm /admin sẵn
