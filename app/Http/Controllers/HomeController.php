@@ -11,7 +11,6 @@ class HomeController extends Controller
     //     return view('client.pages.home');
     // }
     public function index(){
-        $data = Http::withOptions(['verify' => false])->get('https://reqres.in/api/users/2')->json();
-        return view('client.pages.home',['data' => $data]);
+        return view('client.pages.home');
     }
 }

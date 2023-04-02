@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\AddFriendController;
 use App\Http\Controllers\FriendController;
 use App\Http\Controllers\FriendPeopleController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HomeFriendController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ImagePeopleController;
 use App\Http\Controllers\IntroduceController;
@@ -36,10 +38,13 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
 // home
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/friends', [HomeFriendController::class, 'index'])->name('home.friend');
+Route::get('/friends/requests', [AddFriendController::class, 'index'])->name('requests.friend');
+
 
 // CLIENT USER
 Route::prefix('user')->group( function ()
-{ // thêm /user sẵn
+{
     Route::get('/', [ProfileController::class, 'index'])->name('profile');
     Route::get('/friends', [FriendController::class, 'index'])->name('friends');
     Route::get('/image', [ImageController::class, 'index'])->name('image');
@@ -48,7 +53,7 @@ Route::prefix('user')->group( function ()
 
 // CLIENT PEOPLE
 Route::prefix('people')->group( function ()
-{ // thêm /user sẵn
+{ 
     Route::get('/', [ProfilePeopleController::class, 'index'])->name('people.profile');
     Route::get('/friends', [FriendPeopleController::class, 'index'])->name('people.friends');
     Route::get('/images', [ImagePeopleController::class, 'index'])->name('people.image');
@@ -56,7 +61,7 @@ Route::prefix('people')->group( function ()
 });
 
 // ADMIN
-Route::prefix('admin')->group(function (){ // thêm /admin sẵn
+Route::prefix('admin')->group(function (){ 
 
     Route::get('/', function () {
         return view('admin.layout.adminlayout');

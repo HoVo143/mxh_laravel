@@ -6,7 +6,7 @@
             <img src="{{asset('img/hoa.jpg')}}" alt="">
             <div>
                 <div >
-                    <a href="{{ route('profile')}}"><p class="name-user">CongDanh</p></a>
+                    <a href="{{ route('profile')}}"><p class="name-user">Công Danh</p></a>
                 </div>
                 <span class="time">June 24 2021, 13:40 pm</span>
             </div>
@@ -20,11 +20,11 @@
                     <div class="post-fas">
                         <ul>
                             {{-- <div class="remove-post" ><i class="fa-solid fa-xmark"></i></div> --}}
-                            <li><i class="fa-solid fa-bookmark"></i>Save post</li>
-                            <li><i class="fa-regular fa-calendar-xmark"></i>Hide posts</li>
-                            <li><i class="fa-regular fa-bell"></i>Turn on announce this post</li>
-                            <li><i class="fa-solid fa-ban"></i>Unfollow</li>
-                            <li><i class="fa-solid fa-flag"></i>Article report</li>
+                            <li><i class="fa-solid fa-bookmark"></i>Lưu bài viết</li>
+                            <li><i class="fa-regular fa-calendar-xmark"></i>Ẩn bài viết</li>
+                            <li><i class="fa-regular fa-bell"></i>Bật thông báo bài viết này</li>
+                            <li><i class="fa-solid fa-ban"></i>Bỏ theo dõi</li>
+                            <li><i class="fa-solid fa-flag"></i>Báo cáo</li>
                         </ul>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
             <div class="cmt-btn">
                 <div class="container-cmt">
                     <div class="name-cmt">
-                        <h4>Article by CongDanh</h4>
+                        <h4>Bài viết của Công Danh</h4>
                     </div>
                     <form action="">
                         <div class="view-user">
@@ -68,7 +68,7 @@
                                 <div class="name-user">
                                     <div class="user-container">
                                         <div class="name-user-cmt">
-                                            <h4>CongDanh 
+                                            <h4>Công Danh 
                                                 {{-- <span class="time"> 
                                                     6 hours 
                                                 </span> --}}
@@ -91,8 +91,8 @@
                             </div>
                             <div class="reply-cmt">
                                 <img src="{{asset('img/user-m.png')}}" alt="">
-                                <textarea name="" id="" cols="3" rows="1" placeholder="write a comment..."></textarea>
-                                <div class="post-btn">Post</div>
+                                <textarea name="" id="" cols="3" rows="1" placeholder="Viết bình luận..."></textarea>
+                                <div class="post-btn">Đăng</div>
              
                             </div>
                         </div>

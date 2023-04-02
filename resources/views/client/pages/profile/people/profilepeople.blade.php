@@ -8,15 +8,15 @@
     <div class="profile-info">
         <div class="info-col">
             <div class="profile-intro">
-                <h3>Life</h3>
+                <h3>Tiểu sử</h3>
                 <p class="intro-text">CongDanh CongDanh CongDanh CongDanh CongDanh CongDanh CongDanh CongDanh.
                     <i class="fa-regular bieucam fa-face-laugh"></i></p>
                 <hr>
             </div>
             <div class="profile-intro">
                 <div class="title-box">
-                    <h3>Photos</h3>
-                    <a href="{{ route('people.image')}}">All Photos</a>
+                    <h3>Hình ảnh</h3>
+                    <a href="{{ route('people.image')}}">Xem thêm</a>
                 </div>
                 <div class="photo-box">
                     {{-- bản chính --}}
@@ -37,10 +37,10 @@
          
             <div class="profile-intro">
                 <div class="title-box">
-                    <h3>Friends</h3>
-                    <a href="{{ route('people.friends')}}">All Friends</a>
+                    <h3>Bạn bè</h3>
+                    <a href="{{ route('people.friends')}}">Xem thêm</a>
                 </div>
-                <p class="many">120 (10 mutual)</p>
+                <p class="many">120 (10 bạn chung)</p>
                 <div class="friends-box">
                     {{-- bản chính --}}
                     <div>

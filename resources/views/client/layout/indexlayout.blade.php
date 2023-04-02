@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="{{asset('assets/css/friend.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/image.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/introdu.css')}}">
-
-
+    <link rel="stylesheet" href="{{asset('assets/css/home_friend.css')}}">
 
 
     <title>@yield('title')</title>
+
 </head>
 <body>
     {{-- -------------------- HEADER ------------------------ --}}
@@ -40,6 +40,8 @@
     <script src="{{asset('assets/js/image.js')}}"></script>
     <script src="{{asset('assets/js/info.js')}}"></script>
     <script src="{{asset('assets/js/introdu.js')}}"></script>
+    <script src="{{asset('assets/js/like.js')}}"></script>
 
+    
 </body>
 </html>

@@ -7,7 +7,7 @@
         <div class="container-ms">
             <div id="search-messenger">
                 <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="text" name="" id="search-mes" placeholder="Search friends...">
+                <input type="text" name="" id="search-mes" placeholder="Tìm kiếm bạn bè...">
                 
             </div>
             <div class="messenger-menu-inner">
@@ -16,8 +16,8 @@
                         <img src="{{asset('img/1.jpg')}}" alt="">
                     </div>
                     <div class="des">
-                        <h5>Alison Mina</h5>
-                        <p>Hello , my friends hihihihihiihihihih</p>
+                        <h5>Công Danh</h5>
+                        <p>Hello , chào cháo chào</p>
                     </div>
                 </div>
                 <!-- text -->

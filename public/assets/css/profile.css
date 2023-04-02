@@ -42,7 +42,7 @@ body{
     height: 100%;
     border-radius: 6px;
     margin-bottom: 14px;
-    object-fit: contain;
+    object-fit: cover;
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
 
 }
@@ -65,7 +65,7 @@ body{
     border-radius: 50%;
     cursor: pointer;
     border: 3px solid salmon;
-    object-fit: contain;
+    object-fit: cover;
 }
 .profile-details .pd-row div h3 {
     font-size: 25px;
@@ -85,7 +85,7 @@ body{
     border-radius: 50%;
     margin-top: 12px;
     cursor: pointer;
-    object-fit: contain;
+    object-fit: cover;
 
 }
 .pd-right button{
@@ -130,8 +130,9 @@ body{
     border-top: 1px solid saddlebrown;
     padding-top: 10px;
     cursor: pointer;
-    width: 30%;
+    width: 40%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .pd-bottom a{
@@ -223,7 +224,7 @@ body{
     height: 100%;
     cursor: pointer;
     image-rendering: pixelated; /*Làm sắc nét hình ảnh*/
-    object-fit: contain;
+    object-fit: cover;
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
     border-radius: 5px;
     overflow: hidden;
@@ -238,7 +239,9 @@ body{
     height: 385px;
     overflow: hidden;
 }
-
+.friends-box a{
+    text-decoration: none;
+}
 .friends-box div img{
     width: 100%;
     height: 100%;
@@ -249,7 +252,7 @@ body{
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
     border-radius: 5px;
     overflow: hidden;
-    object-fit: contain;
+    object-fit: cover;
 
 }
 .friends-box div {
@@ -409,7 +412,7 @@ body{
     visibility: hidden;
 }
 .file_user::before {
-    content: 'Upload avatar';
+    content: 'Chọn ảnh đại diện';
     display: inline-block;
     text-align: center;
     border: 1px solid #999;
@@ -423,7 +426,7 @@ body{
     margin-bottom: 10px;
     -webkit-user-select: none;
     cursor: pointer;
-    text-shadow: 1px 1px #fff;
+    /* text-shadow: 1px 1px #fff; */
     font-weight: 700;
 }
 .file_user:hover::before {
@@ -438,10 +441,10 @@ body{
 
 }
 .file_cover::-webkit-file-upload-button {
-    visibility: hidden;
+    visibility:hidden;
 }
 .file_cover::before {
-    content: 'Upload cover image';
+    content: 'Chọn ảnh bìa';
     display: inline-block;
     text-align: center;
     border: 1px solid #999;
@@ -455,7 +458,7 @@ body{
     margin-bottom: 10px;
     -webkit-user-select: none;
     cursor: pointer;
-    text-shadow: 1px 1px #fff;
+    /* text-shadow: 1px 1px #fff; */
     font-weight: 700;
 }
 .file_cover:hover::before {
@@ -511,7 +514,7 @@ body{
 img.cover_img{
     width: 70%;
     overflow: hidden;
-    object-fit: contain;
+    object-fit: cover;
     border-radius:8px;
     border: 2px solid #fff;
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
@@ -519,7 +522,7 @@ img.cover_img{
   }
   img.avatar {
     overflow: hidden;
-    object-fit: contain;
+    object-fit: cover;
     width: 40%;
     border-radius: 50%;
     border: 2px solid #fff;

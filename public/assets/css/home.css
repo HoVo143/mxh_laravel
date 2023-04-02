@@ -14,6 +14,7 @@ ul{
     --color-color: #000;
     --cmt-color: #efefef ;
     --header-color:salmon;
+    --friendhome-color: #dedede;
 }
 .dark-theme{
     --body-color: #0a0a0a;
@@ -22,6 +23,8 @@ ul{
     --color-color:#fff;
     --cmt-color: #2f2f2f;
     --header-color:rgb(153, 43, 31);
+    --friendhome-color: #2f2f2f;
+
 }
 body{
     text-decoration: none;
@@ -73,9 +76,9 @@ body{
     margin-right: 5px;
     color: salmon;
 }
-.imp-links a:last-child{
+/* .imp-links a:last-child{
     color: salmon;
-}
+} */
 .imp-links {
     border-bottom: 1px solid salmon;
 }
@@ -176,7 +179,7 @@ body{
     background: salmon;
 }
 .sidebar-title-chat{
-    height: 230px;
+    height: 330px;
     overflow: auto;
 }
 .sidebar-title-chat::-webkit-scrollbar{
@@ -186,18 +189,20 @@ body{
     background-color: salmon;
     border-radius: 5px;
 }
-.add-sidebar-title{
-    height: 75px;
-}
 
+.add_sidebars{
+    height: 70px;
+    overflow: hidden;
+}
 .add-sidebar-title .add button{
-    margin-top: 3px;
+    margin-top: 8px;
     font-size: 14px;
     border: 0;
     outline: 0;
+    width: 100px;
     margin-right: 5px;
     cursor: pointer;
-    background: salmon;
+    background: var(--header-color);
     padding: 6px 7px;
     border-radius: 4px;
     color: #fff;
@@ -526,7 +531,7 @@ select::-ms-expand {
     height: 100%; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.6); 
-    padding: 5% 22%;
+    padding: 5% 350px;
 }
 .cmt-btn{
     display: flex;

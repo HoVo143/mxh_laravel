@@ -9,8 +9,8 @@
                 {{-- -------------------------------new--------------------- --}}
                 <div class="notifications">
                     <div class="news">
-                        <h3>New</h3>
-                        <a href="#">See All</a>
+                        <h3>Mới</h3>
+                        <a href="#">Xem thêm</a>
                     </div>
                     <div class="online-list">
                         <div class="online">
@@ -39,8 +39,8 @@
                 {{-- -------------------------------before--------------------- --}}
                 <div class="notifications">
                     <div class="news">
-                        <h3>Before</h3>
-                        <a href="#">See All</a>
+                        <h3>Trước đó</h3>
+                        <a href="#">Xem thêm</a>
                     </div>
                     <div class="online-list">
                         <div class="online">

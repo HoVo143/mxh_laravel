@@ -7,5 +7,5 @@
     }
 </style>
 <div class="footer">
-    <p>Privacy · Terms · Advertising · Ad Choices</p>
+    <p>Quyền riêng tư  · Điều khoản  · Quảng cáo  · Lựa chọn quảng cáo · &copy;2023</p>
 </div>

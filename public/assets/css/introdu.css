@@ -1,8 +1,4 @@
 
-
-*{
-    box-sizing: border-box;
-}
 .profile-infos{
     display: flex;
     justify-content: space-between;
@@ -43,7 +39,7 @@
 }
 .app_content_intro{
     display: flex;
-
+    flex-wrap: wrap;
    
 }
 .tabs_intro li{

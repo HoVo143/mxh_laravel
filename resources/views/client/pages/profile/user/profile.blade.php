@@ -8,23 +8,15 @@
     <div class="profile-info">
         <div class="info-col">
             <div class="profile-intro">
-                <h3>Life</h3>
+                <h3>Tiểu sử</h3>
                 <p class="intro-text">Believe in youself and you can do unbelievable things.
                     <i class="fa-regular bieucam fa-face-laugh"></i></p>
                 <hr>
-               
-                {{-- <ul>
-                    <li><i class="fa-solid fa-briefcase"></i>Director at 99media Ltd</li>
-                    <li><i class="fa-solid fa-building-columns"></i>Studied at Amity University</li>
-                    <li><i class="fa-solid fa-graduation-cap"></i>Went to DPS Delhi</li>
-                    <li><i class="fa-solid fa-house"></i>Lives in HCM CITY, VIETNAM </li>
-                    <li><i class="fa-solid fa-location-dot"></i>From HCM CITY, VIETNAM</li>
-                </ul> --}}
             </div>
             <div class="profile-intro">
                 <div class="title-box">
-                    <h3>Photos</h3>
-                    <a href="{{ route('image')}}">All Photos</a>
+                    <h3>Hình ảnh</h3>
+                    <a href="{{ route('image')}}">Xem thêm</a>
                 </div>
                 <div class="photo-box">
                     {{-- bản chính --}}
@@ -45,28 +37,28 @@
          
             <div class="profile-intro">
                 <div class="title-box">
-                    <h3>Friends</h3>
-                    <a href="{{ route('friends')}}">All Friends</a>
+                    <h3>Bạn bè</h3>
+                    <a href="{{ route('friends')}}">Xem thêm</a>
                 </div>
-                <p class="many">120 (10 mutual)</p>
+                <p class="many">120</p>
                 <div class="friends-box">
                     {{-- bản chính --}}
                     <div>
                         <a href="{{route('people.profile')}}">
-                            <img src="{{asset('img/user-text.png')}}"> <p>name friends</p> 
+                            <img src="{{asset('img/user-text.png')}}"> <p>Tên bạn bè</p> 
                         </a>
                     </div>
                     {{-- end bản chính --}}
 
                     {{-- xóa cái này  --}}
-                    <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
-                    <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
-                    <div><img src="{{asset('img/hoa.jpg')}}"> <p>name friends</p> </div>
-                    <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
-                    <div><img src="{{asset('img/WebsiteExperts.png')}}"> <p>name friends</p> </div>
-                    <div><img src="{{asset('img/web-developer.jpg')}}"> <p>name friends</p> </div>
-                    <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
-                    <div><img src="{{asset('img/user-text.png')}}"> <p>name friends</p> </div>
+                    <div><img src="{{asset('img/user-text.png')}}"> <p>Tên bạn bè</p> </div>
+                    <div><img src="{{asset('img/user-text.png')}}"> <p>Tên bạn bè</p> </div>
+                    <div><img src="{{asset('img/hoa.jpg')}}"> <p>Tên bạn bè</p> </div>
+                    <div><img src="{{asset('img/user-text.png')}}"> <p>Tên bạn bè</p> </div>
+                    <div><img src="{{asset('img/WebsiteExperts.png')}}"> <p>Tên bạn bè</p> </div>
+                    <div><img src="{{asset('img/web-developer.jpg')}}"> <p>Tên bạn bè</p> </div>
+                    <div><img src="{{asset('img/user-text.png')}}"> <p>Tên bạn bè</p> </div>
+                    <div><img src="{{asset('img/user-text.png')}}"> <p>Tên bạn bè</p> </div>
                     {{-- end xóa cái này  --}}
                 </div>
             </div>

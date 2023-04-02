@@ -17,7 +17,7 @@
     <div class="nav-right">
         <div class="search-box">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search...">
+            <input type="text" placeholder="Tìm kiếm...">
         </div>
         <div class="nav-user-icon" onclick="settingsMenuToggle()">
             <img src="{{asset('img/user-m.png')}}" alt="">
@@ -31,7 +31,7 @@
             <div class="user-profile">
                     <img class="{{ request()->route()->getName() === 'profile'}}" src="{{asset('img/user-m.png')}}" alt="">
                     <a href="{{ route('profile')}}" style="text-decoration: none">
-                        <p class="name-profile">HoVo</p>
+                        <p class="name-profile">Hồ Võ</p>
 
                     </a>
             </div>
@@ -39,18 +39,18 @@
             <div class="user-profile">
                 <i class="fa-regular fa-message"></i>
                     <div>
-                        <p>Give Feedback</p>
-                        <a href="#">Help us to improve the new design</a>
+                        <p>Đóng góp ý kiến</p>
+                        <a href="#">Giúp chúng tôi cải thiện trang web tốt hơn</a>
                     </div>
             </div>
             <hr>
             <div class="settings-links">
                 <i class="fa-solid setting-icon fa-gear"></i>
-                <a href="#">Settings & Privacy <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#">Cài đặt <i class="fa-solid fa-chevron-right"></i></a>
             </div>
             <div class="settings-links">
                 <i class="fa-solid fa-circle-question"></i>
-                <a href="#">Help & Support <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#">Hỗ trợ<i class="fa-solid fa-chevron-right"></i></a>
             </div>
             <!-- <div class="settings-links">
                 <i class="fa-solid fa-moon"></i>
@@ -58,7 +58,7 @@
             </div> -->
             <div class="settings-links">
                 <i class="fa-solid fa-right-from-bracket"></i>
-                <a href="#">Logout<i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#">Đăng xuất<i class="fa-solid fa-chevron-right"></i></a>
             </div>
         </div>
     </div>

@@ -4,30 +4,30 @@
     <div class="user-profile">
         <img src="{{asset('img/user-m.png')}}" alt="">
         <div>
-            <div class="{{ Request::route()->getName() === 'profile'}}">
-                <a href="{{ route('profile')}}"><p>HoVo</p></a>
+            <div class="">
+                <a href="{{ route('profile')}}"><p>Hồ Võ</p></a>
             </div>
             <!-- <small>Public <i class="fa-solid fa-caret-down"></i></small> -->
             <div class="custom-select">
                 <div class="select">
                     <select name="format" id="format">
-                        <option value="Public" >Public</option>
-                        <option value="Private">Private</option>
-                        <option value="Follower">Follower</option>
+                        <option value="Public" >Công khai</option>
+                        <option value="Private">Chỉ mình tôi</option>
+                        <option value="Follower">Bạn bè</option>
                     </select>
                 </div>
             </div>
         </div>
     </div>
     <div class="post-input-container">
-        <textarea name="" id="" rows="3" placeholder="What's on your mind, John?"></textarea>
+        <textarea name="" id="" rows="3" placeholder="Bạn nghĩ gì ?"></textarea>
         <div class="add-post-links">
-            <a href="#"><i class="fa-solid fa-video"></i> Live Video </a>
-            <a href="#"><i class="fa-solid fa-camera"></i> Photo/Video </a>
-            <a href="#"><i class="fa-regular fa-face-laugh"></i> Feling/Activity </a>
+            <a href="#"><i class="fa-solid fa-video"></i> Video trực tiếp </a>
+            <a href="#"><i class="fa-solid fa-camera"></i> Ảnh/Video </a>
+            <a href="#"><i class="fa-regular fa-face-laugh"></i> Cảm xúc </a>
             {{-- <div class="post-btn">Post</div> --}}
 
-            <a href="#"><button class="post-input">Post</button></a>
+            <a href="#"><button class="post-input">Đăng</button></a>
         </div>
     </div>
 </div>
@@ -40,7 +40,7 @@
             <img src="{{asset('img/user-m.png')}}" alt="">
             <div>
                 <div >
-                    <a href="{{ route('profile')}}"><p class="name-user">HoVo</p></a>
+                    <a href="{{ route('profile')}}"><p class="name-user">Hồ Võ</p></a>
                 </div>
                 <span class="time">June 24 2021, 13:40 pm</span>
             </div>
@@ -68,11 +68,11 @@
                     <div class="post-fas">
                         <ul>
                             {{-- <div class="remove-post" ><i class="fa-solid fa-xmark"></i></div> --}}
-                            <li><i class="fa-solid fa-bookmark"></i>Save post</li>
-                            {{-- <li><i class="fa-regular fa-calendar-xmark"></i>Hide posts</li> --}}
-                            <li><i class="fa-regular fa-bell"></i>Turn on announce this post</li>
-                            <li><i class="fa-solid fa-trash-can"></i> Remove</li>
-                            {{-- <li><i class="fa-solid fa-flag"></i>Article report</li> --}}
+                            <li><i class="fa-solid fa-bookmark"></i>Lưu bài viết</li>
+                            <li><i class="fa-regular fa-calendar-xmark"></i>Ẩn bài viết</li>
+                            <li><i class="fa-regular fa-bell"></i>Bật thông báo bài viết này</li>
+                            {{-- <li><i class="fa-solid fa-ban"></i>Unfollow</li> --}}
+                            <li><i class="fa-solid fa-flag"></i>Báo cáo</li>
                         </ul>
                     </div>
                 </div>
@@ -82,8 +82,9 @@
     <div class="post-text">
         <p> 
             <span>@HoVo</span> 
-            How did you learn your Web developing skill. 
-            OR How are you learning your Web developing skills
+            Mạng xã hội (social network) là
+            Một trang web hay nền tảng trực tuyến với rất nhiều dạng thức và tính năng khác nhau,
+             giúp mọi người dễ dàng kết nối từ bất cứ đâu.
             <a href="#">#HoVo</a>
             <a href="#">#DanhNguyen</a> </p>
     </div>
@@ -108,7 +109,7 @@
             <div class="cmt-btn">
                 <div class="container-cmt">
                     <div class="name-cmt">
-                        <h4>Article by HoVo</h4>
+                        <h4>Bài viết của Hồ Võ</h4>
                     </div>
                     <form action="">
                         <div class="view-user">
@@ -118,13 +119,14 @@
                                 <div class="name-user">
                                     <div class="user-container">
                                         <div class="name-user-cmt">
-                                            <h4>HoVo 
+                                            <h4>Hồ Võ 
                                                 {{-- <span class="time"> 
                                                     6 hours 
                                                 </span> --}}
                                             </h4>
-                                            <p class="cmtt">youtube channel to watch more videos on 
-                                                website development and UI designs. 
+                                            <p class="cmtt">  Mạng xã hội (social network) là
+                                                Một trang web hay nền tảng trực tuyến với rất nhiều dạng thức và tính năng khác nhau,
+                                                 giúp mọi người dễ dàng kết nối từ bất cứ đâu.
                                             </p>
                                         </div>
                                     </div>
@@ -138,7 +140,7 @@
                                                     <div class="dropdown-content">
                                                         <span><i class="fa-solid fa-pen-to-square"></i>Edit</span>
                                                         <span><i class="fa-solid fa-trash-can"></i>Remove</span>
-                                            
+                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -212,8 +214,8 @@
                             </div>
                             <div class="reply-cmt">
                                 <img src="{{asset('img/user-m.png')}}" alt="">
-                                <textarea name="" id="" cols="3" rows="1" placeholder="write a comment..."></textarea>
-                                <div class="post-btn">Post</div>
+                                <textarea name="" id="" cols="3" rows="1" placeholder="Viết bình luận..."></textarea>
+                                <div class="post-btn">Đăng</div>
              
                             </div>
                         </div>
@@ -225,3 +227,38 @@
 </div>
 
 
+
+        <!-- Xóa cái post-container này-->
+        <div class="post-container">
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="{{asset('img/user-m.png')}}" alt="">
+                    <div>
+                        <p class="name-user">Hồ Võ</p>
+                        <span class="time">June 24 2021, 13:40 pm</span>
+                    </div>
+                </div>
+                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+            <div class="post-text">
+                <p>
+                    <span>@HoVo</span> 
+                    Mạng xã hội (social network) là
+                    Một trang web hay nền tảng trực tuyến với rất nhiều dạng thức và tính năng khác nhau,
+                     giúp mọi người dễ dàng kết nối từ bất cứ đâu.
+                    <a href="#">#HoVo</a>
+                    <a href="#">#DanhNguyen</a> </p>
+            </div>
+            <div class="post-img">
+                <img src="{{asset('img/web-developer.jpg')}}">
+            </div>
+
+            <div class="post-row">
+                <div class="activity-icons">
+                    <div class="like"> <i class="fa-solid fa-heart"></i> <span>1000</span> </div>
+                    <div class="comments"> <i class="fa-solid fa-message"></i> <span>200</span></div>
+                    <div class="shares"><i class="fa-solid fa-share"></i> <span>20</span></div>
+                </div>
+            </div>
+        
+        </div>

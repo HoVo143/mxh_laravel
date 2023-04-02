@@ -9,7 +9,7 @@
         <!-- image -->
         <div class="profile-image">
             <div class="title-image">
-                <h3>Image</h3>
+                <h3>Ảnh</h3>
             </div>
             {{-- <div class="tab_img">
                 <button class="tablinks" data-target="#images">Your picture</button>
@@ -17,10 +17,10 @@
             </div> --}}
             <ul class="tab_img">
                 <li data-target="#content_1">
-                    <p>Your picture</p>
+                    <p>Ảnh của bạn</p>
                 </li>
                 <li data-target="#content_2">
-                    <p>Your Albums</p>
+                    <p>Albums của bạn</p>
                 </li>
             </ul>
             {{-- image cua ban --}}
@@ -35,8 +35,8 @@
                              {{-- hover edit img --}}
                             <div class="edit_img">
                                 <ul class="dropdown-menu">
-                                    <li><i class="fa-solid fa-trash-can"></i>Delete photos</li>
-                                    <li><i class="fa-solid fa-user"></i>Set as Avatar</li>
+                                    <li><i class="fa-solid fa-trash-can"></i>Xóa ảnh</li>
+                                    <li><i class="fa-solid fa-user"></i>Đặt làm ảnh đại diện</li>
                                 </ul>
                             </div>
                              {{-- end hover edit img --}}
@@ -93,58 +93,109 @@
                     {{-- add albums --}}
                     <div class="albums">
                         <div class="add_ablums" onclick="document.getElementById('id01').style.display='block'"> <i class="fa-solid fa-plus"></i></div>
-                        <p class="name">Add albums</p>
+                        <p class="name">Thêm albums</p>
                         {{-- add --}}
                     </div>
                     <div id="id01" class="modalalbums">
                         <form class="modal-content animate" action="" method="get">     
-                            <h2>Add albums</h2>              
+                            <h2>Thêm albums</h2>              
                             <div class="container_albums">
-                                <label for="addalbums"><b>Albums name</b></label>
+                                <label for="addalbums"><b>Tên albums</b></label>
                                 <input type="text" name="addalbums" id="addalbums">
                         
                                 {{-- <label for="file"><b>Upload photos or albums</b></label> --}}
                                 <input type="file" name="file" id="file_albums">
                                 
-                                <button type="submit" class="post_albums">Post albums</button>
+                                <button type="submit" class="post_albums">Lưu albums</button>
                             </div>
                         
                             <div class="container_albums cancel">
-                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Hủy bỏ</button>
                         
                             </div>
                         </form>
                     </div>
                     {{-- end add albums --}}
-    
-    
-    
+                    {{-- hiện albums --}}
                     <div class="albums">
                         <img src="{{asset('img/WebDesign.jpg')}}">
-                        <p class="name">cover image</p>
+                        <div class="edit_album">
+                            <i class="fa-solid remove_album fa-ellipsis"></i>
+                            {{-- hover edit_album --}}
+                            <div class="edit_albums">
+                                <ul class="dropdown-menus">
+                                    <li><span><i class="fa-solid remove_albums fa-trash-can"></span></i><span>Xóa albums</span></li>
+                                
+                                </ul>
+                            </div>
+                             {{-- end hover edit_album --}}
+                        </div>
+                        <p class="name">Ảnh bìa</p>
                     </div>
+                    {{-- end hiện albums --}}
         
                     {{-- text xoa cai nay --}}
                     <div class="albums">
                         <img src="{{asset('img/WebDesign.jpg')}}">
-                        <p class="name">avatar</p>
+                        <div class="edit_album">
+                            <i class="fa-solid remove_album fa-ellipsis"></i>
+                            {{-- hover edit_album --}}
+                            <div class="edit_albums">
+                                <ul class="dropdown-menus">
+                                    <li><span><i class="fa-solid remove_albums fa-trash-can"></span></i><span>Xóa albums</span></li>
+                                
+                                </ul>
+                            </div>
+                             {{-- end hover edit_album --}}
+                        </div>
+                        <p class="name">Ảnh đại diện</p>
                     </div> 
                     
                     <div class="albums">
                         <img src="{{asset('img/WebDesign.jpg')}}">
-                        <p class="name">upload from mobile</p>
-                    </div>
-                    <div class="albums">
-                        <img src="{{asset('img/hoa.jpg')}}">
-                        <p class="name">Notable photo</p>
+                        <div class="edit_album">
+                            <i class="fa-solid remove_album fa-ellipsis"></i>
+                            {{-- hover edit_album --}}
+                            <div class="edit_albums">
+                                <ul class="dropdown-menus">
+                                    <li><span><i class="fa-solid remove_albums fa-trash-can"></span></i><span>Xóa albums</span></li>
+                                
+                                </ul>
+                            </div>
+                             {{-- end hover edit_album --}}
+                        </div>
+                        <p class="name">Tải lên từ điện thoại</p>
                     </div>
                     <div class="albums">
                         <img src="{{asset('img/WebDesign.jpg')}}">
-                        <p class="name">upload from mobile</p>
-                    </div>
+                        <div class="edit_album">
+                            <i class="fa-solid remove_album fa-ellipsis"></i>
+                            {{-- hover edit_album --}}
+                            <div class="edit_albums">
+                                <ul class="dropdown-menus">
+                                    <li><span><i class="fa-solid remove_albums fa-trash-can"></span></i><span>Xóa albums</span></li>
+                                
+                                </ul>
+                            </div>
+                             {{-- end hover edit_album --}}
+                        </div>
+                        <p class="name">Ảnh đại diện</p>
+                    </div> 
+                    
                     <div class="albums">
                         <img src="{{asset('img/WebDesign.jpg')}}">
-                        <p class="name">Notable photo</p>
+                        <div class="edit_album">
+                            <i class="fa-solid remove_album fa-ellipsis"></i>
+                            {{-- hover edit_album --}}
+                            <div class="edit_albums">
+                                <ul class="dropdown-menus">
+                                    <li><span><i class="fa-solid remove_albums fa-trash-can"></span></i><span>Xóa albums</span></li>
+                                
+                                </ul>
+                            </div>
+                             {{-- end hover edit_album --}}
+                        </div>
+                        <p class="name">Tải lên từ điện thoại</p>
                     </div>
                     {{-- end text xoa cai nay --}}
                 </div>
