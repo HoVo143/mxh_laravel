@@ -9,11 +9,11 @@
         <!-- friends -->
         <div class="profile-friends">
             <div class="title-friends">
-                <h3>Friends</h3>
+                <h3>Bạn bè</h3>
                 <div class="sidebar-search">
                     <div id="search-messenger">
                         <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input type="text" name="" id="search-mes" placeholder="Search friends...">             
+                        <input type="text" name="" id="search-mes" placeholder="Tìm kiếm bạn bè...">             
                     </div>
                 </div>
             </div>
@@ -37,8 +37,8 @@
                                 </div>
                             </div>
                             <div class="info-bottom">
-                                <button type="button"><i class="fa-solid fa-user-check"></i>Friend</button>
-                                <button type="button"> <i class="fa-solid fa-comment-dots"></i> Message</button>
+                                <button type="button"><i class="fa-solid fa-user-check"></i>Bạn bè</button>
+                                <button type="button"> <i class="fa-solid fa-comment-dots"></i> Nhắn tin</button>
                             </div>
                         </div>
                     </div>

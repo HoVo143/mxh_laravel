@@ -9,11 +9,14 @@ use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ImagePeopleController;
 use App\Http\Controllers\IntroduceController;
 use App\Http\Controllers\IntroducePeopleController;
+use App\Http\Controllers\ListFriendController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProfilePeopleController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SuggestionFriendController;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Console\Completion\Suggestion;
 
 // Route::get('/', function () {
 //     return view('client.pages.home');
@@ -38,8 +41,13 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
 // home
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+// link bạn bè ở trang home
 Route::get('/friends', [HomeFriendController::class, 'index'])->name('home.friend');
 Route::get('/friends/requests', [AddFriendController::class, 'index'])->name('requests.friend');
+Route::get('/friends/suggestion', [SuggestionFriendController::class, 'index'])->name('suggestion.friend');
+Route::get('/friends/list', [ListFriendController::class, 'index'])->name('list.friend');
+
 
 
 // CLIENT USER

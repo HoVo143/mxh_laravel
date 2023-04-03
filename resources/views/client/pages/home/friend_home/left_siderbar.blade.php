@@ -7,14 +7,14 @@
             <span class="nextfr"><i class="fa-solid nexts fa-chevron-right"></i></span>
         </a>
         <a href="{{ route('requests.friend')}}" class="{{ Request::route()->getName() === 'requests.friend' ? 'active': '' }}">
-            <span><i class="fa-solid fa-user-large"></i> Lời mời kết bạn</span>
+            <span><i class="fa-solid fa-right-long"></i> Lời mời kết bạn</span>
             <span class="nextfr"><i class="fa-solid nexts fa-chevron-right"></i></span>
         </a>
-        <a href="#" class="{{ Request::route()->getName() === 'shop' ? 'active': '' }}">
-            <span><i class="fa-solid fa-user-plus"></i> Gợi ý</span>
+        <a href="{{ route('suggestion.friend')}}" class="{{ Request::route()->getName() === 'suggestion.friend' ? 'active': '' }}">
+            <span><i class="fa-solid fa-user-plus"></i> Gợi ý kết bạn</span>
             <span class="nextfr"><i class="fa-solid nexts fa-chevron-right"></i></span>
         </a>
-        <a href="#" class="{{ Request::route()->getName() === 'shop' ? 'active': '' }}">
+        <a href="{{ route('list.friend')}}" class="{{ Request::route()->getName() === 'list.friend' ? 'active': '' }}">
             <span><i class="fa-solid fa-user-check"></i> Tất cả bạn bè</span>
             <span class="nextfr"><i class="fa-solid nexts fa-chevron-right"></i></span>
         </a>

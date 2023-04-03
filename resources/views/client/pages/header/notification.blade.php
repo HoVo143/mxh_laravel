@@ -6,6 +6,26 @@
     <div class="notification-menu">
         <div class="container-ms">
             <div class="notification-menu-inner">
+                <div class="notifications">
+                    <div class="news">
+                        <h3>Lời mời</h3>
+                        <a href="{{ route('requests.friend')}}">Xem thêm</a>
+                    </div> 
+                    <div class="online-list">
+                        <div class="wrapper_sidebar_title">
+                            <div class="online-list">
+                                <div class="online">
+                                    <a href="{{route('people.profile')}}"><img src="{{asset('img/user2.png')}}" alt=""></a>
+                                </div>
+                                <div class="add_button">
+                                    <p>Công Danh</p>
+                                    <a href="#"><button class="confim">Chấp nhận</button></a>
+                                    <a href="#"><button class="removed">Xóa</button></a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
                 {{-- -------------------------------new--------------------- --}}
                 <div class="notifications">
                     <div class="news">

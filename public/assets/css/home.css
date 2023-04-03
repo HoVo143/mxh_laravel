@@ -8,6 +8,7 @@ ul{
     list-style: none;
 }
 :root{
+    --border-color:none;
     --body-color: #efefef;
     --nav-color:#1846f2;
     --bg-color:#fff;
@@ -17,6 +18,7 @@ ul{
     --friendhome-color: #dedede;
 }
 .dark-theme{
+    --border-color:rgb(46, 46, 46);
     --body-color: #0a0a0a;
     --nav-color:#000;
     --bg-color:#191919;

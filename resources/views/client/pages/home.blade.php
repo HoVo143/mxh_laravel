@@ -55,27 +55,11 @@
 
     <!-- ----------------right-sidebar------------ -->
     <div class="right-sidebar">
-        {{-- <div class="sidebar-title">
-            <h4>Events</h4>
-            <a href="#">See All</a>
-        </div>
-        <!-- event -->
-        <div class="event">
-            <div class="left-event">
-                <h3>18</h3>
-                <span>March</span>
-            </div>
-            <div class="right-event">
-                <h4>Social Media</h4>
-                <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
-                <a href="#">More Info</a>
-            </div>
-        </div> --}}
 
         {{-- loi moi ket ban --}}
         <div class="sidebar-title">
             <h4>Lời mời kết bạn</h4>
-            <a href="{{ route('home.friend')}}">Xem thêm</a>
+            <a href="{{ route('requests.friend')}}">Xem thêm</a>
         </div> 
         <div class="add_sidebars">
             <div class="add-sidebar-title">

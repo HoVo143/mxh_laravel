@@ -1,19 +1,25 @@
 .container_friendhome{
     display: flex;
     justify-content: space-between;
-    padding: 48px 3%;
+    padding: 48px 0;
+    background: var(--body-color);
 }
 .left_sidebar_friendhome{
     /* background: #cbdffa; */
     flex-basis: 25%;
     position: sticky;
     align-self: flex-start;
-    margin-top: 30px;
-    background: var(--body-color);
+    padding: 30px;
+    top: 55px;
 }
 .name_friendhome{
     color: var(--color-color);
     font-weight: 600;
+}
+
+.imp_links_friendhome{
+    /* height: 500px; */
+
 }
 .imp_links_friendhome a{
     margin-top: 20px;
@@ -58,11 +64,91 @@
     background-color: var(--friendhome-color);
     border-radius: 5px;
 }
+/* right --------------------------------------------------------*/
 .right_sidebar_friendhome{
     background: var(--bg-color);
     flex-basis: 75%;
-    padding: 20px;
+    padding: 25px;
     margin-top: 9px;
     color: var(--color-color);
-    top: 70px;
+}
+.name_addfriend{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-color);
+}
+.name_addfriend a{
+    text-decoration: none;
+    color: var(--color-color);
+    font-size: 17px;
+}
+.name_addfriend a:hover{
+    opacity: .7;
+}
+.containers_right{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 5 - 20px);
+    padding: 25px 1%;
+    height: 100%;
+    width: 100%;
+}
+.wrappers_right{
+    /* padding: 20px; */
+    width: 190px;
+    height: 325px;
+    margin: 10px 10px;
+    border-radius: 8px;
+    background: var(--body-color);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    border: 1px solid var(--border-color);
+}
+.img_friends{
+    /* width: 178px; */
+    height: 180px;
+}
+.img_friends img{
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+.wrapper_friends .nameh2, .btn_add{
+    padding: 5px 8px;
+}
+.nameh2 h4{
+    font-size: 18px;
+    width: 158px;
+    height: 22px;
+    overflow: hidden;
+}
+.nameh2 p {
+    font-size: 16px;
+    color:rgb(140, 138, 138);
+}
+.btn_add {
+    display: flex;
+    flex-direction: column;
+}
+.btn_add button:nth-child(1){
+   background-color: salmon;
+   color: #fff;
+}
+.btn_add button{
+    cursor: pointer;
+    font-weight: 700;
+    padding: 8px 0;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color:darkgray;
+    color: #fff;
+    border: 0;
+    /* outline: 0; */
+}
+.btn_add button:hover{
+    opacity: .8;
 }
