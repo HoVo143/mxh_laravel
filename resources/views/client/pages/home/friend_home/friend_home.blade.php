@@ -17,7 +17,7 @@
         <div class="wrappers_friendhome">
             <div class="name_addfriend">
                 <h3>Lời mời kết bạn</h3>
-                <a href="#"><p>Xem tất cả</p></a>
+                <a href="{{route('requests.friend')}}"><p>Xem tất cả</p></a>
             </div>
             <div class="containers_right">
                 <div class="wrappers_right">
@@ -122,7 +122,7 @@
         <div class="wrappers_friendhome">
             <div class="name_addfriend">
                 <h3>Gợi ý kết bạn</h3>
-                <a href="#"><p>Xem tất cả</p></a>
+                <a href="{{route('suggestion.friend')}}"><p>Xem tất cả</p></a>
             </div>
             <div class="containers_right">
                 {{-- text xoa cai nay --}}

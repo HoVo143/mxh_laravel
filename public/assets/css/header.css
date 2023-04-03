@@ -397,14 +397,19 @@ h1{
     text-decoration: none;
     color: salmon;
 }
-.wrapper_sidebar_title{
-    height: 50px;
-    width: 232px;
+.wrapper_sidebar_title {
+    height: 55px;
+    width: 233px;
+    overflow: hidden;
+}
+.wrapper_sidebar_title .add_button p {
+    height: 20px;
+    width: 205px;
     overflow: hidden;
 }
 .wrapper_sidebar_title .add_button button{
     margin-top: 5px;
-    padding: 4px 5px;
+    padding: 5px 5px;
     width: 85px;
     background: salmon;
     color: #fff ;

@@ -18,7 +18,6 @@ Gợi ý kết bạn | Earth
         <div class="wrappers_friendhome">
             <div class="name_addfriend">
                 <h3>Gợi ý kết bạn</h3>
-                <a href="#"><p>Xem tất cả</p></a>
             </div>
             <div class="containers_right">
                 {{-- text xoa cai nay --}}

@@ -11,6 +11,7 @@
                         <h3>Lời mời</h3>
                         <a href="{{ route('requests.friend')}}">Xem thêm</a>
                     </div> 
+                    {{--  --}}
                     <div class="online-list">
                         <div class="wrapper_sidebar_title">
                             <div class="online-list">
