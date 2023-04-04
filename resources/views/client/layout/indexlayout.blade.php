@@ -41,6 +41,7 @@
     <script src="{{asset('assets/js/info.js')}}"></script>
     <script src="{{asset('assets/js/introdu.js')}}"></script>
     <script src="{{asset('assets/js/like.js')}}"></script>
+    <script src="{{asset('assets/js/search.js')}}"></script>
 
     
 </body>

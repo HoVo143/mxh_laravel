@@ -490,7 +490,7 @@ select::-ms-expand {
     justify-content: space-between;
 }
 .fa-heart{
-    color: crimson;
+    color:#999;
 }
 .fa-share{
     color: #1876f2;

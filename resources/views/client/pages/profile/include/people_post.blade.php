@@ -43,7 +43,9 @@
 
     <div class="post-row">
         <div class="activity-icons">
-            <div class="like"> <i class="fa-regular fa-heart"></i> <span>1200</span> </div>
+            <div class="like"><i class="fa-solid block_heart fa-heart"></i>
+                <span>1200</span> 
+            </div>
             <!-- comment -->
             <div class="comments" onclick="document.getElementById('section-cmt').style.display='block'"> 
                 <i class="fa-solid fa-message"></i> 
@@ -102,5 +104,7 @@
         </div>
     <!-- end comment -->
 </div>
+
+
 
 

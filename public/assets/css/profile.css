@@ -156,6 +156,9 @@ body{
 }
 .info-col{
     flex-basis: 33%;
+    position: sticky;
+    align-self: flex-start;
+    top: -110px;
 }
 .profile-intro{
     background: var(--bg-color);
@@ -372,7 +375,7 @@ body{
     justify-content: space-between;
 }
 .fa-heart{
-    color: crimson;
+    color:#999;
 }
 .fa-share{
     color: #1876f2;

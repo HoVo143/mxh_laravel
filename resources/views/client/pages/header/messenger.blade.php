@@ -8,7 +8,6 @@
             <div id="search-messenger">
                 <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <input type="text" name="" id="search-mes" placeholder="Tìm kiếm bạn bè...">
-                
             </div>
             <div class="messenger-menu-inner">
                 <div class="online-list">

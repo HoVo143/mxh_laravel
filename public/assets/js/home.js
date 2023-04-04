@@ -26,18 +26,18 @@ else{
     localStorage.setItem("theme", "light");
 }
 
-// comment
-// var comment = document.getElementById('timess');
-// window.onclick = function(event) {
-//     if (event.target == comment) {
-//         comment.style.display = "none";
-//     }
-// }
-// comment trong comment
+
+
 var modal = document.getElementById('section-cmt');
 var albums = document.getElementById('id01'); // albums
 var EDIT_USER = document.getElementById('EDIT_USER'); //EDIT USER
+var searchs_header = document.getElementById('searchss');
+
 window.onclick = function(event) {
+    //searchs header
+    if (event.target == searchs_header) {
+        searchs_header.style.display = "none";
+    }
     // comment
     if (event.target == modal) {
         modal.style.display = "none";

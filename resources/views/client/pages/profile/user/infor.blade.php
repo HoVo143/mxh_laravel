@@ -72,7 +72,8 @@
                 </div>
                 <div class="container_edit">
                     <div class="wrapper_btn">
-                        <button type="button" onclick="document.getElementById('EDIT_USER').style.display='none'" class="cancel_btn">Ẩn</button>
+                        <button type="button" 
+                        onclick="document.getElementById('EDIT_USER').style.display='none'" class="cancel_btn">Hủy bỏ</button>
                         <button type="submit" class="btnPost">Lưu</button>
                     </div>
                 </div>
