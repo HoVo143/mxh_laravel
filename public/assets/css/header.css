@@ -103,6 +103,9 @@ h1{
     outline: none;
     border: 0;
 }
+.search-box:hover{
+    opacity: .9;
+}
 .online{
     position: relative;
 }

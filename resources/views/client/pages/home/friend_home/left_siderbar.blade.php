@@ -3,7 +3,7 @@
     <div class="imp_links_friendhome">
 
         <a href="{{ route('home.friend')}}" class=" {{ request()->route()->getName() === 'home.friend' ? 'active': '' }}">
-            <span><i class="fa-solid fa-users"></i> Tổng quan</span>
+            <span><i class="fa-solid fa-user-group"></i> Tổng quan</span>
             <span class="nextfr"><i class="fa-solid nexts fa-chevron-right"></i></span>
         </a>
         <a href="{{ route('requests.friend')}}" class="{{ Request::route()->getName() === 'requests.friend' ? 'active': '' }}">
@@ -16,6 +16,10 @@
         </a>
         <a href="{{ route('list.friend')}}" class="{{ Request::route()->getName() === 'list.friend' ? 'active': '' }}">
             <span><i class="fa-solid fa-user-check"></i> Tất cả bạn bè</span>
+            <span class="nextfr"><i class="fa-solid nexts fa-chevron-right"></i></span>
+        </a>
+        <a href="{{ route('allgroups.friend')}}" class="{{ Request::route()->getName() === 'allgroups.friend' ? 'active': '' }}">
+            <span><i class="fa-solid fa-users-line"></i> Tất cả groups</span>
             <span class="nextfr"><i class="fa-solid nexts fa-chevron-right"></i></span>
         </a>
     </div>

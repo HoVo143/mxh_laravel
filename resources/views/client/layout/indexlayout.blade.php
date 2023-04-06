@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/image.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/introdu.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/home_friend.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/groups.css')}}">
 
 
     <title>@yield('title')</title>

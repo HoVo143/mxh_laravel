@@ -44,7 +44,6 @@ body{
     margin-bottom: 14px;
     object-fit: cover;
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-
 }
 .profile-details{
     background: var(--bg-color);
@@ -60,13 +59,15 @@ body{
     align-items: center;
 }
 .profile-details .pd-row .pd-img{
-    width: 120px;
+    width: 150px;
+    height: 150px;
     margin-right: 20px;
     border-radius: 50%;
     cursor: pointer;
     border: 3px solid salmon;
     object-fit: cover;
 }
+
 .profile-details .pd-row div h3 {
     font-size: 25px;
     font-weight: 600;

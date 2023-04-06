@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\AddFriendController;
+use App\Http\Controllers\AllGroupFriendController;
 use App\Http\Controllers\FriendController;
 use App\Http\Controllers\FriendPeopleController;
+use App\Http\Controllers\GroupController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HomeFriendController;
 use App\Http\Controllers\ImageController;
@@ -47,6 +49,10 @@ Route::get('/friends', [HomeFriendController::class, 'index'])->name('home.frien
 Route::get('/friends/requests', [AddFriendController::class, 'index'])->name('requests.friend');
 Route::get('/friends/suggestion', [SuggestionFriendController::class, 'index'])->name('suggestion.friend');
 Route::get('/friends/list', [ListFriendController::class, 'index'])->name('list.friend');
+Route::get('/friends/allgroups', [AllGroupFriendController::class, 'index'])->name('allgroups.friend');
+
+// group
+Route::get('/groups', [GroupController::class, 'index'])->name('groups');
 
 
 
