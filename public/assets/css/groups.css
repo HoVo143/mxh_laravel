@@ -5,7 +5,7 @@
 }
 .containers_group{
     /* margin-top: 50px; */
-    flex-basis: 80%;
+    flex-basis: 75%;
     
 }
 .containers_group_img{
@@ -19,6 +19,22 @@
     margin-bottom: 14px;
     object-fit: cover;
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+.btn_group_add button{
+    padding: 7px 15px;
+    border: var(--border-color);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--header-color);
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+.btn_group_add button:hover{
+    opacity: .8;
+}
+.btn_group_add button i{
+    padding-left: 5px;
 }
 .group_profile{
     background: var(--bg-color);
@@ -50,39 +66,247 @@
 .wrappers_groups{
     display: flex;
 }
-/* main */
+/*----------------------------------------- main -----------------------------------------*/
 .main_sidebar_friendhome{
-    flex-basis: 80%;
-    margin-top: 58px;
+    margin-top: 20px;
+    flex-basis: 100%;
+
 }
-/* left */
-.left_sidebar_groups{
+/* member */
+.containers_member{
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 6px;
+    padding: 20px;
+    color: var(--color-color);
+}
+.wrapper_member{
+    margin-bottom: 50px;
+}
+.search_member{
+    display: flex;
+    align-items: center;
+    width: 100%;
     margin-top: 15px;
     background: var(--bg-color);
-    flex-basis: 20%;
+    border-radius: 20px;
+    padding: 0 15px;
+    border: 1px solid var(--search-color);
+}
+.search_member i{
+    width: 18px;
+    color:dimgray;
+    cursor: pointer;
+}
+.search_member input{
+    width: 100%;
+    color: var(--color-color);
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+.names_h4{
+    display: flex;
+    align-items: center;
+}
+.names_h4 h4{
+    margin-right: 5px;
+}
+.names_h4 span{
+    margin-right: 5px;
+}
+.names_h4 p{
+ 
+}
+.wrappers_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+.title_member .img_member{
+    width: 50px;
+    height: 50px;
+}
+.title_member .img_member img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title_member{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-color);
+}
+.name_member{
+    margin-left: 15px;
+}
+.name_member a{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-color);
+}
+.name_member h4:hover{
+    text-decoration: underline;
+}
+.name_member p {
+    margin-top: 2px;
+    font-size: 12px;
+}
+.btn_member button{
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    border: var(--border-color);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--header-color);
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+.btn_member button:hover{
+    opacity: .8;
+}
+.btn_member button i{
+    margin-right: 3px;
+}
+/* end member */
+
+/*----------------------------------------- end main -----------------------------------------*/
+
+/*----------------------------------------- right -----------------------------------------*/
+.right_sidebar_groups{
+    /* margin-top: 15px; */
+    /* background: var(--bg-color); */
+    /* flex-basis: 20%; */
     position: sticky;
     align-self: flex-start;
-    padding: 20px;
+    /* padding: 10px; */
     border-radius: 8px;
     color: var(--color-color);
-    top: 70px;
-    margin-right: 15px;
+    top: 50px;
+    margin-left: 15px;
 }
-.intro_text_groups{
+.wrapper_chat_groups li {
+    padding: 10px;
+}
+.wrapper_chat_groups li a{
+    text-decoration: none;
+    color: var(--color-color);
+}
+.info_groups{
+    margin-top: 20px;
+}
+.chat_groups_list{
+    display: flex;
+    align-items: center;
+}
+.chat_groups_h5{
+    margin-left: 13px;
+    font-size: 17px;
+}
+.chat_groups_img{
+    width: 50px;
+    height: 50px;
+}
+.chat_groups_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    border: 1px solid var(--border-color);
+}
+.container_chat_groups{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+/*----------------------------------------- end right -----------------------------------------*/
+
+
+/* ----------------------------------------- left ----------------------------------------- */
+.left_sidebar_groups{
+    flex-basis: 25%;
+    position: sticky;
+    align-self: flex-start;
+    padding: 25px 0;
+    top: 55px;
+}
+.wrapper_title_groups{
+    display: flex;
+    margin-bottom: 25px;
+}
+.wrapper_title_groups {
+    display: flex;
+    align-items: center;
+}
+.title_img_group{
+    width: 87px;
+    height: 87px;
+}
+.title_img_group img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+}
+.name_groups{
+    margin-left: 15px;
+    /* font-weight: 600; */
+}
+.name_groups h3{
+    /* margin-left: 15px; */
+    font-weight: 600;
+    font-size: 20px;
+}
+.name_groups p {
+    margin-top: 5px;
+    color: rgb(139, 137, 137);
+    font-size: 13px;
+}
+.name_groups_btn{
+    margin-top: 7px;
+    border: 1px solid var(--border-color);   
+    padding: 6px;
+    width: 170px;
+    border-radius: 8px;
+    background: var(--header-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+.name_groups_btn:hover{
+    opacity: .8;
+}
+.name_groups_btn i{
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.profile_title_groups{
+    background: var(--bg-color);
+    padding: 13px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.profile_title_groups h3{
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-color);
+}
+.text_groups{
     width: 325px;
     margin: 10px 0;
-    font-size: 15px;
+    font-size: 16px;
     color: var(--color-color);
     overflow: hidden;
 }
-/* right */
-.right_sidebar_groups{
-    flex-basis: 20%;
-    position: sticky;
-    align-self: flex-start;
-    padding: 30px;
-    top: 55px;
-}
-.info_groups{
-
-}
+/* ----------------------------------------- end left ----------------------------------------- */

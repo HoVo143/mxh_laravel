@@ -30,13 +30,13 @@
         <!-- shortcut -->
         <div class="shortcut-links">
             <p>Tất cả Groups</p>
-            <a href="{{route('groups')}}">
+            <a href="{{route('group.postgroup')}}">
                 <img src="{{asset('img/web-developer.jpg')}}" alt=""> Web Developers
             </a>
-            <a href="{{route('groups')}}">
+            <a href="{{route('group.postgroup')}}">
                 <img src="{{asset('img/WebDesign.jpg')}}" alt=""> Web Design Course
             </a>
-            <a href="{{route('groups')}}">
+            <a href="{{route('group.postgroup')}}">
                 <img src="{{asset('img/FullStack.png')}}" alt=""> Full Stack
             </a>
             <a href="{{route('allgroups.friend')}}" class="all-groups">

@@ -33,7 +33,7 @@ Tất cả groups | Earth
                 {{-- bản chính --}}
                 <div class="allgroups">
                     <div class="div-allgroups">
-                        <a href="{{route('groups')}}" class="allgroups_img">
+                        <a href="{{route('group.postgroup')}}" class="allgroups_img">
                             <img src="{{asset('img/web-developer.jpg')}}" alt="">
                         </a>
                         <p class="p_group">Full Stack</p>
@@ -43,19 +43,19 @@ Tất cả groups | Earth
     
                     {{-- text xoa cai nay --}}
                     <div class="div-allgroups">
-                        <a href="{{route('groups')}}" class="allgroups_img">
+                        <a href="{{route('group.postgroup')}}" class="allgroups_img">
                             <img src="{{asset('img/WebsiteExperts.png')}}" alt="">
                         </a>
                         <p class="p_group">Web Developers</p>
                     </div>
                     <div class="div-allgroups">
-                        <a href="{{route('groups')}}" class="allgroups_img">
+                        <a href="{{route('group.postgroup')}}" class="allgroups_img">
                             <img src="{{asset('img/WebDesign.jpg')}}" alt="">
                         </a>
                         <p class="p_group">Web Design Course </p>
                     </div>
                     <div class="div-allgroups">
-                        <a href="{{route('groups')}}" class="allgroups_img">
+                        <a href="{{route('group.postgroup')}}" class="allgroups_img">
                             <img src="{{asset('img/WebDesign.jpg')}}" alt="">
                         </a>
                         <p class="p_group">Web Developers</p>

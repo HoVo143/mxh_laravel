@@ -1,17 +1,21 @@
 
 <nav>
     <div class="nav-left">
-            <a href="{{ route('home')}}" style="text-decoration: none">
-                <h1 class="logo {{ request()->route()->getName() === 'home'}}">Earth</h1>
-            </a>
+        <a href="{{ route('home')}}" style="text-decoration: none">
+            <h1 class="logo"> Earth
+                {{-- <img src="{{asset('img/logo-no-background.svg')}}" alt=""> --}}
+            </h1>
+        </a>
         <ul>
+            
             {{-- ---------------MESSENGER---------------- --}}
             @include('client.pages.header.messenger')
             {{-- ---------------END MESSENGER---------------- --}}
-
+            
             {{-- ---------------NOTIFICATION-------------- --}}
             @include('client.pages.header.notification')
             {{-- ---------------END NOTIFICATION-------------- --}}
+
         </ul>
     </div>
     <div class="nav-right">
@@ -72,6 +76,7 @@
                 </li>
                 {{-- end text searchs--}}
             </ul>
+
         </div>
         <div class="nav-user-icon" onclick="settingsMenuToggle()">
             <img src="{{asset('img/user-m.png')}}" alt="">
@@ -83,7 +88,7 @@
         </div>
         <div class="settings-menu-inner">
             <div class="user-profile">
-                    <img class="{{ request()->route()->getName() === 'profile'}}" src="{{asset('img/user-m.png')}}" alt="">
+                    <img class="" src="{{asset('img/user-m.png')}}" alt="">
                     <a href="{{ route('profile')}}" style="text-decoration: none">
                         <p class="name-profile">Hồ Võ</p>
 

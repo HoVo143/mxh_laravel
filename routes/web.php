@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\AddFriendController;
-use App\Http\Controllers\AllGroupFriendController;
+
 use App\Http\Controllers\FriendController;
 use App\Http\Controllers\FriendPeopleController;
 use App\Http\Controllers\GroupController;
@@ -11,14 +10,14 @@ use App\Http\Controllers\ImageController;
 use App\Http\Controllers\ImagePeopleController;
 use App\Http\Controllers\IntroduceController;
 use App\Http\Controllers\IntroducePeopleController;
-use App\Http\Controllers\ListFriendController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PeopleController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProfilePeopleController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\SuggestionFriendController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-use Symfony\Component\Console\Completion\Suggestion;
+
 
 // Route::get('/', function () {
 //     return view('client.pages.home');
@@ -45,33 +44,35 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // link bạn bè ở trang home
-Route::get('/friends', [HomeFriendController::class, 'index'])->name('home.friend');
-Route::get('/friends/requests', [AddFriendController::class, 'index'])->name('requests.friend');
-Route::get('/friends/suggestion', [SuggestionFriendController::class, 'index'])->name('suggestion.friend');
-Route::get('/friends/list', [ListFriendController::class, 'index'])->name('list.friend');
-Route::get('/friends/allgroups', [AllGroupFriendController::class, 'index'])->name('allgroups.friend');
+Route::get('/friends', [HomeFriendController::class, 'friendhome'])->name('home.friend');
+Route::get('/friends/requests', [HomeFriendController::class, 'addfriend'])->name('requests.friend');
+Route::get('/friends/suggestion', [HomeFriendController::class, 'suggestion'])->name('suggestion.friend');
+Route::get('/friends/list', [HomeFriendController::class, 'listfriend'])->name('list.friend');
+Route::get('/friends/allgroups', [HomeFriendController::class, 'allgroups'])->name('allgroups.friend');
 
 // group
-Route::get('/groups', [GroupController::class, 'index'])->name('groups');
-
+Route::get('/groups', [GroupController::class, 'groupindex'])->name('group');
+Route::get('/groups/member', [GroupController::class, 'member'])->name('group.member');
+Route::get('/groups/post', [GroupController::class, 'postgroup'])->name('group.postgroup');
+Route::get('/groups/media', [GroupController::class, 'fileimge'])->name('group.fileimge');
 
 
 // CLIENT USER
 Route::prefix('user')->group( function ()
 {
-    Route::get('/', [ProfileController::class, 'index'])->name('profile');
-    Route::get('/friends', [FriendController::class, 'index'])->name('friends');
-    Route::get('/image', [ImageController::class, 'index'])->name('image');
-    Route::get('/introduce', [IntroduceController::class, 'index'])->name('introduce');
+    Route::get('/', [UserController::class, 'profile'])->name('profile');
+    Route::get('/friends', [UserController::class, 'friends'])->name('friends');
+    Route::get('/image', [UserController::class, 'image'])->name('image');
+    Route::get('/introduce', [UserController::class, 'introduce'])->name('introduce');
 });
 
 // CLIENT PEOPLE
 Route::prefix('people')->group( function ()
 { 
-    Route::get('/', [ProfilePeopleController::class, 'index'])->name('people.profile');
-    Route::get('/friends', [FriendPeopleController::class, 'index'])->name('people.friends');
-    Route::get('/images', [ImagePeopleController::class, 'index'])->name('people.image');
-    Route::get('/introduce', [IntroducePeopleController::class, 'index'])->name('people.introduce');
+    Route::get('/', [PeopleController::class, 'profile'])->name('people.profile');
+    Route::get('/friends', [PeopleController::class, 'friends'])->name('people.friends');
+    Route::get('/images', [PeopleController::class, 'image'])->name('people.image');
+    Route::get('/introduce', [PeopleController::class, 'introduce'])->name('people.introduce');
 });
 
 // ADMIN

@@ -16,8 +16,10 @@ ul{
     --cmt-color: #efefef ;
     --header-color:salmon;
     --friendhome-color: #dedede;
+    --search-color:#dedede;
 }
 .dark-theme{
+    --search-color:rgb(46, 46, 46);
     --border-color:rgb(46, 46, 46);
     --body-color: #0a0a0a;
     --nav-color:#000;
@@ -40,7 +42,7 @@ body{
 .container{
     display: flex;
     justify-content: space-between;
-    padding: 13px 3%;
+    padding: 13px 1%;
     /* background: #efefef; */
 }
 .left-sidebar{
@@ -106,7 +108,7 @@ body{
     height: 35px;
     border-radius: 5px;
     margin-right: 8px;
-    image-rendering: pixelated; /*Làm sắc nét hình ảnh*/
+    /* image-rendering: pixelated; Làm sắc nét hình ảnh */
     object-fit: contain;
 }
 .shortcut-links .all-groups{
@@ -269,7 +271,7 @@ body{
     width: 45px;
     border-radius: 50%;
     margin-right: 10px;
-    image-rendering: pixelated; /*Làm sắc nét hình ảnh*/
+    /* image-rendering: pixelated; Làm sắc nét hình ảnh */
     object-fit: contain;
 }
 .user-profile p {
@@ -513,7 +515,7 @@ select::-ms-expand {
     width: 20px;
     border-radius: 50%;
     margin-right: 5px;
-    image-rendering: pixelated; /*Làm sắc nét hình ảnh*/
+    /* image-rendering: pixelated; Làm sắc nét hình ảnh */
     object-fit: contain;
 }
 .post-row a{
