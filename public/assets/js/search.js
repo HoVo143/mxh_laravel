@@ -1,4 +1,4 @@
-
+// search header
 function myFunction() {
 
     const input = document.getElementById("myInput");
@@ -20,6 +20,32 @@ function myFunction() {
         else 
         {
             li[i].style.display = "none";
+        }
+    }
+}
+
+//search groups member
+function inputMember() {
+
+    const inputMember = document.getElementById("input_member");
+
+    const filters = inputMember.value.toUpperCase();
+
+    const ulMember = document.getElementById("ul_member");
+
+    const lis = ulMember.getElementsByTagName("li");
+
+    for (i = 0; i < lis.length; i++) 
+    {
+        const div = lis[i].getElementsByTagName("div")[0];
+        const txtValues = div.textContent || div.innerText;
+        if (txtValues.toUpperCase().indexOf(filters) > -1) 
+        {
+            lis[i].style.display = "";
+        } 
+        else 
+        {
+            lis[i].style.display = "none";
         }
     }
 }

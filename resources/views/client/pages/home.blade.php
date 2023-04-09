@@ -80,7 +80,7 @@
         <div class="hr"></div>
         <!-- ---- -->
         <div class="sidebar-title">
-            <h4>Friends</h4>
+            <h4>Bạn bè</h4>
             <div class="sidebar-search">
                 <div id="search-messenger">
                     <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>

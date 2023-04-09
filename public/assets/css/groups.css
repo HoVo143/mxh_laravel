@@ -72,6 +72,57 @@
     flex-basis: 100%;
 
 }
+/* file phuong tien */
+.containers_file{
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 6px;
+    padding: 20px;
+    color: var(--color-color);
+}
+.name_file{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name_file button{
+    padding: 7px 15px;
+    border: var(--border-color);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--header-color);
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+.name_file button:hover{
+    opacity: .8;
+}
+.file_image_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 4 - 20px);
+    padding: 25px 2%;
+    height: auto;
+    width: 100%;
+}
+.file_image{
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px;
+}
+.file_image_wrapper div img{
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+/* end file phuong tien */
+
 /* member */
 .containers_member{
     width: 100%;
@@ -119,7 +170,20 @@
 .names_h4 p{
  
 }
+#ul_member{
+    width: 100%; 
+}
+#ul_member li span.btn_member{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+}
 .wrappers_main{
+    
+}
+.main_member{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,6 +219,9 @@
 .name_member p {
     margin-top: 2px;
     font-size: 12px;
+}
+.main_member p.color_qtv{
+    color: salmon;
 }
 .btn_member button{
     width: 150px;

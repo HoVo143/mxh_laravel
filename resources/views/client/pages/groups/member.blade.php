@@ -11,53 +11,59 @@
                 <p>3</p>
             </div>
             <div class="wrappers_main">
-                <div class="title_member">
-                    <a href="">
-                        <div class="img_member">
-                            <img src="{{asset('img/user-m.png')}}" alt="">
-                        </div>
-                    </a>
-                        <div class="name_member">
-                            <a href=""><h4>Cong danh</h4></a>
-                            <p>Quản trị viên</p>
-                        </div>
-                </div>
-                <div class="btn_member">
-                    <button><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-user"></i></span>Thêm bạn bè</button>
-                </div>
-            </div>
-            {{--  --}}
-            <div class="wrappers_main">
-                <div class="title_member">
-                    <a href="">
-                        <div class="img_member">
-                            <img src="{{asset('img/user-m.png')}}" alt="">
-                        </div>
-                    </a>
-                        <div class="name_member">
-                            <a href=""><h4>Ho Vo</h4></a>
-                            <p>Quản trị viên</p>
-                        </div>
-                </div>
-                <div class="btn_member">
-                    <button><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-user"></i></span>Thêm bạn bè</button>
+                <div class="main_member">
+                    <div class="title_member">
+                        <a href="">
+                            <div class="img_member">
+                                <img src="{{asset('img/user-m.png')}}" alt="">
+                            </div>
+                        </a>
+                            <div class="name_member">
+                                <a href=""><h4>Cong danh</h4></a>
+                                <p class="color_qtv">Quản trị viên</p>
+                            </div>
+                    </div>
+                    <div class="btn_member">
+                        <button><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-user"></i></span>Thêm bạn bè</button>
+                    </div>
                 </div>
             </div>
             {{--  --}}
             <div class="wrappers_main">
-                <div class="title_member">
-                    <a href="">
-                        <div class="img_member">
-                            <img src="{{asset('img/user-m.png')}}" alt="">
-                        </div>
-                    </a>
-                        <div class="name_member">
-                            <a href=""><h4>Ho Vo</h4></a>
-                            <p>Người kiểm duyệt</p>
-                        </div>
+                <div class="main_member">
+                    <div class="title_member">
+                        <a href="">
+                            <div class="img_member">
+                                <img src="{{asset('img/user-m.png')}}" alt="">
+                            </div>
+                        </a>
+                            <div class="name_member">
+                                <a href=""><h4>Ho Vo</h4></a>
+                                <p class="color_qtv">Quản trị viên</p>
+                            </div>
+                    </div>
+                    <div class="btn_member">
+                        <button><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-user"></i></span>Thêm bạn bè</button>
+                    </div>
                 </div>
-                <div class="btn_member">
-                    <button><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-user"></i></span>Thêm bạn bè</button>
+            </div>
+            {{--  --}}
+            <div class="wrappers_main">
+                <div class="main_member">
+                    <div class="title_member">
+                        <a href="">
+                            <div class="img_member">
+                                <img src="{{asset('img/user-m.png')}}" alt="">
+                            </div>
+                        </a>
+                            <div class="name_member">
+                                <a href=""><h4>Ho Vo</h4></a>
+                                <p class="color_qtv">Người kiểm duyệt</p>
+                            </div>
+                    </div>
+                    <div class="btn_member">
+                        <button><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-user"></i></span>Thêm bạn bè</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,46 +77,53 @@
                 <p>3.250</p>
             </div>
             {{-- search --}}
-            <div class="search_member"  onclick="document.getElementById('').style.display='block'">
+            <div class="search_member" >
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="myInput" placeholder="Tìm kiếm..." >
+                <input type="text" id="input_member" placeholder="Tìm kiếm..." onkeyup="inputMember()">
             </div>
             {{-- end search --}}
 
-            <div class="wrappers_main">
-                <div class="title_member">
-                    <a href="">
-                        <div class="img_member">
-                            <img src="{{asset('img/user-m.png')}}" alt="">
+            <div class="searchs_mb">
+                <ul id="ul_member">
+                    <li>
+                        <div class="main_member">
+                            <div class="title_member">
+                                <a href="">
+                                    <div class="img_member">
+                                        <img src="{{asset('img/user-m.png')}}" alt="">
+                                    </div>
+                                </a>
+                                    <div class="name_member">
+                                        <a href=""><h4>Ho Vo</h4></a>
+                                        <p>20 ban chung</p>
+                                    </div>
+                            </div>
+                            <div class="btn_member">
+                                <button><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-user"></i></span>Thêm bạn bè</button>
+                            </div>
                         </div>
-                    </a>
-                        <div class="name_member">
-                            <a href=""><h4>Ho Vo</h4></a>
-                            <p>20 ban chung</p>
+                    </li>
+
+                    <li>
+                        <div class="main_member">
+                            <div class="title_member">
+                                <a href="">
+                                    <div class="img_member">
+                                        <img src="{{asset('img/user-m.png')}}" alt="">
+                                    </div>
+                                </a>
+                                <div class="name_member">
+                                    <a href=""><h4>Cong Danh</h4></a>
+                                    <p>20 ban chung</p>
+                                </div>
+                            </div>
+                            <div class="btn_member">
+                                <button><span><i class="fa-solid fa-check"></i></span>Bạn bè</button>
+                            </div>
                         </div>
-                </div>
-                <div class="btn_member">
-                    <button><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-user"></i></span>Thêm bạn bè</button>
-                </div>
-            </div>
-            <div class="wrappers_main">
-                <div class="title_member">
-                    <a href="">
-                        <div class="img_member">
-                            <img src="{{asset('img/user-m.png')}}" alt="">
-                        </div>
-                    </a>
-                        <div class="name_member">
-                            <a href=""><h4>Cong Danh</h4></a>
-                            <p>20 ban chung</p>
-                        </div>
-                </div>
-                <div class="btn_member">
-                    <button><span><i class="fa-solid fa-check"></i></span>Bạn bè</button>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
-
-       
     </div>
 @endsection

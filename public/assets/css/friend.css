@@ -37,7 +37,7 @@
     padding: 25px 5%; */
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% / 4 - 20px);
+    width: calc(100% / 5 - 20px);
     padding: 25px 1%;
     height: auto;
     width: 100%;
@@ -48,9 +48,8 @@
     height: 100%;
     cursor: pointer;
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 2px solid var(--border-color);
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-    image-rendering: pixelated; /*Làm sắc nét hình ảnh*/
     object-fit: cover;
 }
 .friends-friends div {
@@ -60,9 +59,9 @@
 }
 .div-friends{
     position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 50px 50px;
+    width: 170px;
+    height: 170px;
+    margin: 20px 15px;
 
 }
 .div-friends a{

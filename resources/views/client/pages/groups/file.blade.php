@@ -2,23 +2,46 @@
 
 @section('btn_group')
 
-    <div class="profile-details">
-        <ul class="pd-bottom">
-            <li class="">
-                <a href="{{ route('profile')}}">Bài viết</a>
-            </li>
-            <li class="">
-                <a href="{{ route('introduce')}}">Giới thiệu</a>
-            </li>
-            <li class="">
-                <a href="{{ route('friends')}}">Bạn bè</a>
-            </li>
-            <li class="">
-                <a href="{{ route('image')}}">Ảnh</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-            </li>
-        </ul>
+<div class="containers_file">
+    <div class="wrapper_file">
+        <div class="name_file">
+            <h4>File phương tiện</h4>
+            <button>Thêm ảnh</button>
+        </div>
+        <div class="file_image_container">
+            <div class="file_image_wrapper" >
+                {{-- ảnh  --}}
+                <div class="file_image">
+                    <img src="{{asset('img/hoa.jpg')}}">
+                </div>
+                {{-- end ảnh  --}}
+        
+        
+                {{-- text xoa cai nay --}}
+                <div class="file_image">
+                    <img src="{{asset('img/hoa.jpg')}}">
+                </div>
+                <div class="file_image">
+                    <img src="{{asset('img/hoa.jpg')}}">
+                </div>
+                <div class="file_image">
+                    <img src="{{asset('img/hoa.jpg')}}">
+                </div>
+                <div class="file_image">
+                    <img src="{{asset('img/hoa.jpg')}}">
+                </div>
+                <div class="file_image">
+                    <img src="{{asset('img/hoa.jpg')}}">
+                </div>
+                <div class="file_image">
+                    <img src="{{asset('img/hoa.jpg')}}">
+                </div>
+                <div class="file_image">
+                    <img src="{{asset('img/hoa.jpg')}}">
+                </div>
+                {{-- end text xoa cai nay --}}
+            </div>
+        </div>
     </div>
+</div>
 @endsection
