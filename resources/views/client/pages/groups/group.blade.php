@@ -81,10 +81,119 @@
                     </a>
                 </li>
                 <li class="btn_group_add">
-                    <button>Mời<i class="fa-solid fa-plus"></i></button>
+                    <button onclick="document.getElementById('id01').style.display='block'">Mời<i class="fa-solid fa-plus"></i></button>
                 </li>
             </ul>
         </div>
+        
+        {{-- Click mời bạn bè tham gia groups --}}
+        <div id="id01" class="modal_groups">
+            <form class="modal_content_groups" action="" method="get">     
+                <h2>Mời bạn bè tham gia nhóm</h2>              
+                <div class="container_addfriend">
+                    {{-- hiển thị những ng bạn đã check --}}
+                    <div class="addfriend_top">
+                        <h5>DANH SÁCH ĐÃ CHỌN</h5>
+                         <div class="wrapper_addfriend">
+                            <a href="{{ route('people.profile')}}" class="linkfriend"><span>@</span><h4>Cong Danh</h4></a>
+                            <a href="{{ route('people.profile')}}" class="linkfriend"><span>@</span><h4>Hồ Võ</h4></a>
+                            <a href="{{ route('people.profile')}}" class="linkfriend"><span>@</span><h4>Trump nguyen</h4></a>
+
+                         </div>
+                    </div>
+                    {{-- end hiển thị những ng bạn đã check --}}
+
+                    {{-- danh sách để check mời bạn bè --}}
+                    <div class="addfriend_bottom">
+                        <h5>DANH SÁCH</h5>
+                        {{-- search --}}
+                        <div class="search_member" >
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="input_member" placeholder="Tìm kiếm..." onkeyup="inputMember()">
+                        </div>
+                        {{-- end search --}}
+
+                        {{-- danh sach ban be --}}
+                        <div class="searchs_member_group">
+                            <ul id="ul_member">
+                                <li>
+                                    <div class="main_member">
+                                        <div class="title_member">
+                                            <a href="{{ route('people.profile')}}">
+                                                <div class="img_member">
+                                                    <img src="{{asset('img/1.jpg')}}" alt="">
+                                                </div>
+                                            </a>
+                                                <div class="name_member">
+                                                    <a href="{{ route('people.profile')}}"><h4>Hồ Võ</h4></a>
+                                                </div>
+                                        </div>
+                                        <div class="btn_member">
+                                            <label class="container_check">Thêm
+                                                <input type="checkbox" checked="checked" class="check_addfriend">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                        </div>
+                                    </div>
+                                </li>
+            
+                                <li>
+                                    <div class="main_member">
+                                        <div class="title_member">
+                                            <a href="{{ route('people.profile')}}">
+                                                <div class="img_member">
+                                                    <img src="{{asset('img/user-m.png')}}" alt="">
+                                                </div>
+                                            </a>
+                                            <div class="name_member">
+                                                <a href="{{ route('people.profile')}}"><h4>Cong Danh</h4></a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_member">
+                                            <label class="container_check">Thêm
+                                                <input type="checkbox" checked="checked" class="check_addfriend">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main_member">
+                                        <div class="title_member">
+                                            <a href="{{ route('people.profile')}}">
+                                                <div class="img_member">
+                                                    <img src="{{asset('img/FullStack.png')}}" alt="">
+                                                </div>
+                                            </a>
+                                            <div class="name_member">
+                                                <a href="{{ route('people.profile')}}"><h4>Trump nguyen</h4></a>
+                                            </div>
+                                        </div>
+                                        <div class="btn_member">
+                                            <label class="container_check">Thêm
+                                                <input type="checkbox" checked="checked" class="check_addfriend">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        {{-- end danh sach ban be --}}
+                    </div>
+                    {{-- end danh sách để check mời bạn bè --}}
+
+                </div>
+            
+                <div class="container_addfriend_group cancel">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Hủy bỏ</button>
+                    
+                    <button type="button" class="cancelbtn addbtn">Gửi lời mời</button> 
+                </div>
+
+            </form>
+        </div>
+        {{-- end Click mời bạn bè tham gia groups --}}
 
         {{--  --}}
         <div class="wrappers_groups">

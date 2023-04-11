@@ -9,7 +9,7 @@
     <div class="left-sidebar">
         <div class="imp-links">
             <a href="{{ route('profile')}}" class="img-userss">
-                <img src="{{asset('img/user-m.png')}}" alt="">Hồ Võ
+                <img src="{{asset('img/ho_vo.jpg')}}" alt="">Hồ Võ
             </a>
             <a href="{{ route('home.friend')}}">
                 <i class="fa-solid fa-user-group "></i> Bạn Bè

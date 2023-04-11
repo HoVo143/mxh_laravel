@@ -29,7 +29,7 @@ else{
 
 
 var modal = document.getElementById('section-cmt');
-var albums = document.getElementById('id01'); // albums
+var clickbtn = document.getElementById('id01'); // albums, mời bb vào group
 var EDIT_USER = document.getElementById('EDIT_USER'); //EDIT USER
 var searchs_header = document.getElementById('searchss');
 
@@ -42,9 +42,9 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-    // albums
-    if (event.target == albums) {
-        albums.style.display = "none";
+    // albums, mời bb vào group
+    if (event.target == clickbtn) {
+        clickbtn.style.display = "none";
     }
     //EDIT USER
     if (event.target == EDIT_USER) {

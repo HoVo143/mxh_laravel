@@ -2,7 +2,7 @@
 
 <div class="write-post-container">
     <div class="user-profile">
-        <img src="{{asset('img/user-m.png')}}" alt="">
+        <img src="{{asset('img/ho_vo.jpg')}}" alt="">
         <div>
             <div class="">
                 <a href="{{ route('profile')}}"><p>Hồ Võ</p></a>
@@ -37,7 +37,7 @@
 <div class="post-container">
     <div class="post-row">
         <div class="user-profile">
-            <img src="{{asset('img/user-m.png')}}" alt="">
+            <img src="{{asset('img/ho_vo.jpg')}}" alt="">
             <div>
                 <div >
                     <a href="{{ route('profile')}}"><p class="name-user">Hồ Võ</p></a>
@@ -119,7 +119,7 @@
                         <div class="view-user">
                             <!-- text cmt -->
                             <div class="user-cmt">
-                                <img src="{{asset('img/user-m.png')}}" alt="">
+                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                 <div class="name-user">
                                     <div class="user-container">
                                         <div class="name-user-cmt">
@@ -157,7 +157,7 @@
                                                  
                                                     <div class="feedback-2">
                                                         <div class="user-cmt-2">
-                                                            <img src="{{asset('img/user-m.png')}}" alt="">
+                                                            <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                                             <div class="name-user">
                                                             <div class="user-container">
                                                                 <div class="name-user-cmt">
@@ -197,7 +197,7 @@
                                                             <i class="fa-solid fa-camera"></i>
                                                         </div>
                                                         <div class="reply-cmt">
-                                                            <img src="{{asset('img/user-m.png')}}" alt="">
+                                                            <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                                             <textarea name="" id="" cols="3" rows="1" placeholder="write a comment..."></textarea>
                                                             <button class="post-btn">Post</button>
                                                         </div>
@@ -217,7 +217,7 @@
                                 <i class="fa-solid fa-camera"></i>
                             </div>
                             <div class="reply-cmt">
-                                <img src="{{asset('img/user-m.png')}}" alt="">
+                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                 <textarea name="" id="" cols="3" rows="1" placeholder="Viết bình luận..."></textarea>
                                 <div class="post-btn">Đăng</div>
              
@@ -236,7 +236,7 @@
         <div class="post-container">
             <div class="post-row">
                 <div class="user-profile">
-                    <img src="{{asset('img/user-m.png')}}" alt="">
+                    <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                     <div>
                         <div >
                             <a href="{{ route('profile')}}"><p class="name-user">Hồ Võ</p></a>
@@ -318,7 +318,7 @@
                                 <div class="view-user">
                                     <!-- text cmt -->
                                     <div class="user-cmt">
-                                        <img src="{{asset('img/user-m.png')}}" alt="">
+                                        <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                         <div class="name-user">
                                             <div class="user-container">
                                                 <div class="name-user-cmt">
@@ -356,7 +356,7 @@
                                                          
                                                             <div class="feedback-2">
                                                                 <div class="user-cmt-2">
-                                                                    <img src="{{asset('img/user-m.png')}}" alt="">
+                                                                    <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                                                     <div class="name-user">
                                                                     <div class="user-container">
                                                                         <div class="name-user-cmt">
@@ -396,7 +396,7 @@
                                                                     <i class="fa-solid fa-camera"></i>
                                                                 </div>
                                                                 <div class="reply-cmt">
-                                                                    <img src="{{asset('img/user-m.png')}}" alt="">
+                                                                    <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                                                     <textarea name="" id="" cols="3" rows="1" placeholder="write a comment..."></textarea>
                                                                     <button class="post-btn">Post</button>
                                                                 </div>
@@ -416,7 +416,7 @@
                                         <i class="fa-solid fa-camera"></i>
                                     </div>
                                     <div class="reply-cmt">
-                                        <img src="{{asset('img/user-m.png')}}" alt="">
+                                        <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                         <textarea name="" id="" cols="3" rows="1" placeholder="Viết bình luận..."></textarea>
                                         <div class="post-btn">Đăng</div>
                      

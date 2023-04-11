@@ -79,16 +79,16 @@
 
         </div>
         <div class="nav-user-icon" onclick="settingsMenuToggle()">
-            <img src="{{asset('img/user-m.png')}}" alt="">
+            <img src="{{asset('img/ho_vo.jpg')}}" alt="">
         </div>
     </div>
     <div class="settings-menu">
-        <div id="dark-btn" class="dark-btn-on">
+        <label id="dark-btn" class="dark-btn-on">
             <span></span>
-        </div>
+        </label>
         <div class="settings-menu-inner">
             <div class="user-profile">
-                    <img class="" src="{{asset('img/user-m.png')}}" alt="">
+                    <img class="" src="{{asset('img/ho_vo.jpg')}}" alt="">
                     <a href="{{ route('profile')}}" style="text-decoration: none">
                         <p class="name-profile">Hồ Võ</p>
 

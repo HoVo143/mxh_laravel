@@ -3,12 +3,12 @@
 @endsection
 <div class="profile-container">
     <div class="cover-img">
-        <img src="{{asset('img/anhbia.jpg')}}" alt="">
+        <img src="{{asset('img/hoa.jpg')}}" alt="">
     </div>
     <div class="profile-details">
         <div class="pd-left">
             <div class="pd-row">
-                <img class="pd-img" src="{{asset('img/user-m.png')}}" alt="">
+                <img class="pd-img" src="{{asset('img/ho_vo.jpg')}}" alt="">
                 <div>
                     <h3>Hồ Võ</h3>
                     <p>120 Bạn bè</p>

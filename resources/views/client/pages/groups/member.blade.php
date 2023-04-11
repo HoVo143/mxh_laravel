@@ -13,13 +13,13 @@
             <div class="wrappers_main">
                 <div class="main_member">
                     <div class="title_member">
-                        <a href="">
+                        <a href="{{ route('people.profile')}}">
                             <div class="img_member">
                                 <img src="{{asset('img/user-m.png')}}" alt="">
                             </div>
                         </a>
                             <div class="name_member">
-                                <a href=""><h4>Cong danh</h4></a>
+                                <a href="{{ route('people.profile')}}"><h4>Cong danh</h4></a>
                                 <p class="color_qtv">Quản trị viên</p>
                             </div>
                     </div>
@@ -32,13 +32,13 @@
             <div class="wrappers_main">
                 <div class="main_member">
                     <div class="title_member">
-                        <a href="">
+                        <a href="{{ route('people.profile')}}">
                             <div class="img_member">
                                 <img src="{{asset('img/user-m.png')}}" alt="">
                             </div>
                         </a>
                             <div class="name_member">
-                                <a href=""><h4>Ho Vo</h4></a>
+                                <a href="{{ route('people.profile')}}"><h4>Ho Vo</h4></a>
                                 <p class="color_qtv">Quản trị viên</p>
                             </div>
                     </div>
@@ -51,13 +51,13 @@
             <div class="wrappers_main">
                 <div class="main_member">
                     <div class="title_member">
-                        <a href="">
+                        <a href="{{ route('people.profile')}}">
                             <div class="img_member">
                                 <img src="{{asset('img/user-m.png')}}" alt="">
                             </div>
                         </a>
                             <div class="name_member">
-                                <a href=""><h4>Ho Vo</h4></a>
+                                <a href="{{ route('people.profile')}}"><h4>Ho Vo</h4></a>
                                 <p class="color_qtv">Người kiểm duyệt</p>
                             </div>
                     </div>
@@ -88,13 +88,13 @@
                     <li>
                         <div class="main_member">
                             <div class="title_member">
-                                <a href="">
+                                <a href="{{ route('people.profile')}}">
                                     <div class="img_member">
                                         <img src="{{asset('img/user-m.png')}}" alt="">
                                     </div>
                                 </a>
                                     <div class="name_member">
-                                        <a href=""><h4>Ho Vo</h4></a>
+                                        <a href="{{ route('people.profile')}}"><h4>Ho Vo</h4></a>
                                         <p>20 ban chung</p>
                                     </div>
                             </div>
@@ -103,17 +103,36 @@
                             </div>
                         </div>
                     </li>
-
+                    {{--  --}}
                     <li>
                         <div class="main_member">
                             <div class="title_member">
-                                <a href="">
+                                <a href="{{ route('people.profile')}}">
+                                    <div class="img_member">
+                                        <img src="{{asset('img/user-m.png')}}" alt="">
+                                    </div>
+                                </a>
+                                    <div class="name_member">
+                                        <a href="{{ route('people.profile')}}"><h4>Ho Vo</h4></a>
+                                        <p>20 ban chung</p>
+                                    </div>
+                            </div>
+                            <div class="btn_member">
+                                <button><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-user"></i></span>Thêm bạn bè</button>
+                            </div>
+                        </div>
+                    </li>
+                    {{--  --}}
+                    <li>
+                        <div class="main_member">
+                            <div class="title_member">
+                                <a href="{{ route('people.profile')}}">
                                     <div class="img_member">
                                         <img src="{{asset('img/user-m.png')}}" alt="">
                                     </div>
                                 </a>
                                 <div class="name_member">
-                                    <a href=""><h4>Cong Danh</h4></a>
+                                    <a href="{{ route('people.profile')}}"><h4>Cong Danh</h4></a>
                                     <p>20 ban chung</p>
                                 </div>
                             </div>
