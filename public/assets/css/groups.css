@@ -327,6 +327,16 @@
 .names_h4 p{
  
 }
+#ul_add_member{
+    width: 100%; 
+}
+#ul_add_member li span.btn_member{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+}
 #ul_member{
     width: 100%; 
 }
@@ -340,7 +350,8 @@
 .wrappers_main{
     
 }
-.main_member{
+
+.main_member, .main_add_member{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -487,6 +498,45 @@
     border: 2px solid var(--border-color);
     cursor: pointer;
 }
+.dropdown-menu.group_dropdown{
+    position: absolute;
+    display: none;
+    width: 170px;
+    background: var(--body-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+    border-radius: 6px;
+
+}
+.dropdown-menu.group_dropdown li{
+    padding:10px;
+
+}
+.dropdown-menu.group_dropdown li a{
+    color: var(--color-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+.dropdown-menu.group_dropdown li:hover {
+    opacity: .8;
+    border-radius: 6px;
+
+}
+.dropdown .dropdown-menu.group_dropdown::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent var(--body-color) transparent;
+
+}
+.dropdown:hover .dropdown-menu.group_dropdown{
+    display: block;
+}
 .name_groups{
     margin-left: 15px;
     /* font-weight: 600; */
@@ -511,12 +561,10 @@
     color: #fff;
     cursor: pointer;
     font-size: 15px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
-.name_groups_btn:hover{
-    opacity: .8;
-}
+
 .name_groups_btn i{
     margin-left: 5px;
     font-size: 13px;

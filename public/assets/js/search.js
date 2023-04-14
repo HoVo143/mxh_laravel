@@ -49,3 +49,30 @@ function inputMember() {
         }
     }
 }
+
+
+//search  groups add friends
+function inputAddFriends() {
+
+    const inputMember = document.getElementById("input_add_friends");
+
+    const filters = inputMember.value.toUpperCase();
+
+    const uladdMember = document.getElementById("ul_add_member");
+
+    const liadd = uladdMember.getElementsByTagName("li");
+
+    for (i = 0; i < liadd.length; i++) 
+    {
+        const div = liadd[i].getElementsByTagName("div")[0];
+        const txtValues = div.textContent || div.innerText;
+        if (txtValues.toUpperCase().indexOf(filters) > -1) 
+        {
+            liadd[i].style.display = "";
+        } 
+        else 
+        {
+            liadd[i].style.display = "none";
+        }
+    }
+}

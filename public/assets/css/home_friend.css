@@ -164,6 +164,7 @@
     padding: 25px 0;
     height: 100%;
     width: 100%;
+    
 }
 .profile-allgroups{
     padding: 10px;
@@ -178,7 +179,7 @@
     background: var(--body-color);
     /* padding: 5px; */
     border-radius: 9px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
 .div-allgroups p{
@@ -190,6 +191,7 @@
 .div-allgroups .allgroups_img {
     width: 120px;
     height: 120px;
+    
 }
 .div-allgroups img{
     width: 100%;
@@ -197,4 +199,5 @@
     object-fit: cover;
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

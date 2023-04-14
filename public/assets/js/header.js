@@ -1,6 +1,6 @@
-var settingsmenu = document.querySelector(".settings-menu");
-var searchBtnMenu = document.querySelector(".messenger-menu");
-var notifiBtnMenu = document.querySelector(".notification-menu");
+const settingsmenu = document.querySelector(".settings-menu");
+const searchBtnMenu = document.querySelector(".messenger-menu");
+const notifiBtnMenu = document.querySelector(".notification-menu");
 
 
 //search home
@@ -19,5 +19,13 @@ function settingsMenuToggle(){
     
 }
 
+// xóa lịch sử tìm kiếm trên thanh search header
+const closebtns = document.getElementsByClassName("fa-xmark");
+let i;
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
 
   

@@ -29,7 +29,7 @@
         </div>
         <!-- shortcut -->
         <div class="shortcut-links">
-            <p>Tất cả Groups</p>
+            <p>Groups</p>
             <a href="{{route('group.postgroup')}}">
                 <img src="{{asset('img/web-developer.jpg')}}" alt=""> Web Developers
             </a>
@@ -95,7 +95,7 @@
                 <div class="online">
                     {{-- link nè --}}
                     <a href="{{route('people.profile')}}">
-                        <img src="{{asset('img/1.jpg')}}" alt="">
+                        <img src="{{asset('img/1.jpg')}}">
                     </a>
                 </div>
                 <p>Alison Mina</p>
@@ -106,19 +106,19 @@
             {{-- text xoa cai nay --}}
             <div class="online-list">
                 <div class="online">
-                    <img src="{{asset('img/img-2.jpg')}}" alt="">
+                    <img src="{{asset('img/img-2.jpg')}}">
                 </div>
                 <p>Jackson</p>
             </div>
             <div class="online-list">
                 <div class="online">
-                    <img src="{{asset('img/img-2.jpg')}}" alt="">
+                    <img src="{{asset('img/img-2.jpg')}}">
                 </div>
                 <p>Ned</p>
             </div>
             <div class="online-list">
                 <div class="online">
-                    <img src="{{asset('img/img-2.jpg')}}" alt="">
+                    <img src="{{asset('img/img-2.jpg')}}">
                 </div>
                 <p>Ned</p>
             </div>

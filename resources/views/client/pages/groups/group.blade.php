@@ -15,10 +15,17 @@
             <div class="name_groups">
                 <h3 class="">Web Developers</h3>
                 <p>25 thành viên</p>
-                <button class="name_groups_btn">
-                    <i class="fa-solid fa-people-group"></i> Đã tham gia 
-                    <i class="fa-solid fa-caret-left fa-rotate-270"></i> 
-                </button>
+                <div class="dropdown" >
+                    <button class="name_groups_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-people-group"></i> Đã tham gia 
+                        <i class="fa-solid fa-caret-left fa-rotate-270"></i> 
+                    </button>
+                    <ul class="dropdown-menu group_dropdown">
+                      <li><a class="dropdown-item" href="#">Bỏ theo dõi nhóm</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Rời nhóm</a></li>
+                      {{-- <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="wrapper_title_groups">
@@ -109,15 +116,15 @@
                         {{-- search --}}
                         <div class="search_member" >
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" id="input_member" placeholder="Tìm kiếm..." onkeyup="inputMember()">
+                            <input type="text" id="input_add_friends" placeholder="Tìm kiếm bạn bè..." onkeyup="inputAddFriends()">
                         </div>
                         {{-- end search --}}
 
                         {{-- danh sach ban be --}}
                         <div class="searchs_member_group">
-                            <ul id="ul_member">
+                            <ul id="ul_add_member">
                                 <li>
-                                    <div class="main_member">
+                                    <div class="main_add_member">
                                         <div class="title_member">
                                             <a href="{{ route('people.profile')}}">
                                                 <div class="img_member">
@@ -138,7 +145,7 @@
                                 </li>
             
                                 <li>
-                                    <div class="main_member">
+                                    <div class="main_add_member">
                                         <div class="title_member">
                                             <a href="{{ route('people.profile')}}">
                                                 <div class="img_member">
@@ -210,7 +217,7 @@
                     <div class="profile_title_groups">
                         <div class="title-box">
                             <h3>Chat nhóm</h3>
-                            <a href="{{ route('image')}}">Xem thêm</a>
+                            <a href="">Xem thêm</a>
                         </div>
                         <div class="container_chat_groups">
                             <ul class="wrapper_chat_groups">
@@ -298,7 +305,7 @@
                     <div class="profile_title_groups">
                         <div class="title-box">
                             <h3>File phương tiện chia sẻ</h3>
-                            <a href="{{ route('image')}}">Xem thêm</a>
+                            <a href="{{ route('group.fileimge')}}">Xem thêm</a>
                         </div>
                         <div class="photo-box">
                             {{-- bản chính --}}
