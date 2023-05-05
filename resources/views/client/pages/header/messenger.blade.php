@@ -5,11 +5,111 @@
     <div class="messenger-menu">
         <!-- search-messenger -->
         <div class="container-ms">
-            <div id="search-messenger">
+            <div class="wrapper_ms">
+                <h3>Messenger</h3>
+                <section class="users">
+                    <div class="search_messenger">
+                        <span class="text">Chọn 1 người để trò chuyện</span>
+                        <input type="text" name="" id="" placeholder="Tìm kiếm bạn bè...">
+                        <button class="btn_messenger"><i class="fas sri fa-search"></i></button>
+                    </div>
+                    <div class="users-list">
+                        {{-- 1 --}} 
+                        <a href="{{route('messages.index')}}">
+                            <div class="content">
+                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+                                <div class="details">
+                                    <span>Coding Nepal</span>
+                                    <p>this is test message</p>
+                                </div>
+                            </div>
+                            <div class="status-dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </a>
+
+                        {{-- text --}}
+                        <a href="#">
+                            <div class="content">
+                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+                                <div class="details">
+                                    <span>Coding Nepal</span>
+                                    <p>this is test message</p>
+                                </div>
+                            </div>
+                            <div class="status-dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="content">
+                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+                                <div class="details">
+                                    <span>Coding Nepal</span>
+                                    <p>this is test message</p>
+                                </div>
+                            </div>
+                            <div class="status-dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="content">
+                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+                                <div class="details">
+                                    <span>Coding Nepal</span>
+                                    <p>this is test message</p>
+                                </div>
+                            </div>
+                            <div class="status-dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="content">
+                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+                                <div class="details">
+                                    <span>Coding Nepal</span>
+                                    <p>this is test message</p>
+                                </div>
+                            </div>
+                            <div class="status-dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="content">
+                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+                                <div class="details">
+                                    <span>Coding Nepal</span>
+                                    <p>this is test message</p>
+                                </div>
+                            </div>
+                            <div class="status-dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="content">
+                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+                                <div class="details">
+                                    <span>Coding Nepal</span>
+                                    <p>this is test message</p>
+                                </div>
+                            </div>
+                            <div class="status-dot">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </a>
+                        {{-- end text --}}
+                    </div>
+                </section>
+            </div>
+            {{-- <div id="search-messenger">
                 <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <input type="text" name="" id="search-mes" placeholder="Tìm kiếm bạn bè...">
-            </div>
-            <div class="messenger-menu-inner">
+            </div> --}}
+            {{-- <div class="messenger-menu-inner">
                 <div class="online-list">
                     <div class="online">
                         <img src="{{asset('img/1.jpg')}}" alt="">
@@ -85,7 +185,7 @@
                     </div>
                 </div>
                 <!-- text -->
-            </div>
+            </div> --}}
         </div>
     </div>
 </li>

@@ -11,7 +11,9 @@ use App\Http\Controllers\ImagePeopleController;
 use App\Http\Controllers\IntroduceController;
 use App\Http\Controllers\IntroducePeopleController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MessengerController;
 use App\Http\Controllers\PeopleController;
+use App\Http\Controllers\ProductClientController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProfilePeopleController;
 use App\Http\Controllers\RegisterController;
@@ -42,6 +44,10 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
 // home
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+//product
+Route::get('/product', [ProductClientController::class, 'index'])->name('home.product');
+
 
 // link bạn bè ở trang home
 Route::get('/friends', [HomeFriendController::class, 'friendhome'])->name('home.friend');
@@ -74,6 +80,9 @@ Route::prefix('people')->group( function ()
     Route::get('/images', [PeopleController::class, 'image'])->name('people.image');
     Route::get('/introduce', [PeopleController::class, 'introduce'])->name('people.introduce');
 });
+
+//Messenger
+Route::get('/messages', [MessengerController::class, 'index'])->name('messages.index');
 
 // ADMIN
 Route::prefix('admin')->group(function (){ 

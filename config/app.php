@@ -14,7 +14,16 @@ return [
     | any other location as required by the application or its packages.
     |
     */
-
+    'providers' => [
+        // ...
+        Barryvdh\Debugbar\ServiceProvider::class,
+    ],
+    
+    'aliases' => [
+        // ...
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+    ],
+    
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
@@ -193,6 +202,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        App\Providers\MessengerServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
     ],

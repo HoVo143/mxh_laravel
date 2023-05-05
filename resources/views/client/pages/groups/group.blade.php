@@ -15,6 +15,7 @@
             <div class="name_groups">
                 <h3 class="">Web Developers</h3>
                 <p>25 thành viên</p>
+               
                 <div class="dropdown" >
                     <button class="name_groups_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-people-group"></i> Đã tham gia 
@@ -23,7 +24,6 @@
                     <ul class="dropdown-menu group_dropdown">
                       <li><a class="dropdown-item" href="#">Bỏ theo dõi nhóm</a></li>
                       <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Rời nhóm</a></li>
-                      {{-- <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
                     </ul>
                 </div>
             </div>

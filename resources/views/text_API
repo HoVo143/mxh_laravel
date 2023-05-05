@@ -1,0 +1,141 @@
+Route::apiResource('users', 'UserController');
+
+
+
+class UserController extends Controller
+{
+    public function index()
+    {
+        $users = User::all();
+        return response()->json($users);
+    }
+    
+    public function store(Request $request)
+    {
+        $user = User::create($request->all());
+        return response()->json($user);
+    }
+    
+    public function show($id)
+    {
+        $user = User::find($id);
+        return response()->json($user);
+    }
+    
+    public function update(Request $request, $id)
+    {
+        $user = User::find($id);
+        $user->update($request->all());
+        return response()->json($user);
+    }
+    
+    public function destroy($id)
+    {
+        User::destroy($id);
+        return response()->json(['message' => 'User deleted']);
+    }
+}
+
+
+///////////////////////////////////
+
+Route::get('/api/users', 'UserController@index');
+Route::post('/api/users', 'UserController@store');
+Route::put('/api/users/{id}', 'UserController@update');
+Route::delete('/api/users/{id}', 'UserController@destroy');
+
+
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class UserController extends Controller
+{
+    public function index()
+    {
+        // Lấy danh sách user
+    }
+
+    public function store(Request $request)
+    {
+        // Tạo mới user
+    }
+
+    public function update(Request $request, $id)
+    {
+        // Cập nhật user có id là $id
+    }
+
+    public function destroy($id)
+    {
+        // Xóa user có id là $id
+    }
+}
+
+public function index()
+{
+    $users = User::all();
+
+    return response()->json([
+        'data' => $users
+    ]);
+}
+
+
+
+/////////////// json
+use Illuminate\Http\JsonResponse;
+
+// Trả về một JSON response với một mảng dữ liệu
+return new JsonResponse([
+    'name' => 'John Doe',
+    'age' => 30,
+    'email' => 'johndoe@example.com'
+]);
+
+// Trả về một JSON response với một đối tượng dữ liệu
+$user = new User();
+$user->name = 'John Doe';
+$user->age = 30;
+$user->email = 'johndoe@example.com';
+
+return new JsonResponse($user);
+
+
+
+///////////////////// lấy dữ liệu từ api có sẵn
+
+1. Tạo một route trong Laravel để lấy dữ liệu từ RESTful API.
+Trong file web.php, bạn có thể tạo một route để lấy dữ liệu từ RESTful API. Ví dụ:
+
+use Illuminate\Support\Facades\Http;
+
+Route::get('/products', function () {
+    $response = Http::get('https://example.com/api/products');
+    $products = $response->json();
+    return view('products', ['products' => $products]);
+});
+
+Trong ví dụ này, chúng ta sử dụng lớp Illuminate\Support\Facades\Http 
+trong Laravel để gửi yêu cầu HTTP GET đến RESTful API và lấy dữ liệu 
+trả về dưới dạng mảng. Sau đó, chúng ta trả về view 'products' và truyền 
+mảng sản phẩm vào view thông qua biến $products.
+
+2 .Tạo một view để hiển thị danh sách sản phẩm.
+Bạn có thể tạo một view để hiển thị danh sách các sản phẩm. Truyền danh sách sản phẩm vào view thông qua biến $products và sử dụng vòng lặp để hiển thị thông tin của mỗi sản phẩm.
+
+Ví dụ:
+// Trong view products.blade.php
+@foreach ($products as $product)
+    <div class="product">
+        <h2>{{ $product['name'] }}</h2>
+        <p>{{ $product['description'] }}</p>
+        <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}">
+    </div>
+@endforeach
+
+
+
+
+

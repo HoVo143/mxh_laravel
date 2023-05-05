@@ -28,4 +28,16 @@ for (i = 0; i < closebtns.length; i++) {
   });
 }
 
+
+const searchBar = document.querySelector(".users .search_messenger input");
+const searchBtn = document.querySelector(".users .search_messenger button");
+const usersList = document.querySelector(".users .users-list");
+
+
+searchBtn.onclick = () => {
+    searchBar.classList.toggle("active");
+    searchBar.focus();
+    searchBtn.classList.toggle('active');
+    searchBar.value = "";
+}
   
