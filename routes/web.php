@@ -82,7 +82,7 @@ Route::prefix('people')->group( function ()
 });
 
 //Messenger
-Route::get('/messages', [MessengerController::class, 'index'])->name('messages.index');
+// Route::get('/messages', [MessengerController::class, 'index'])->name('messages.index');
 
 // ADMIN
 Route::prefix('admin')->group(function (){ 

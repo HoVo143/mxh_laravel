@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/introdu.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/home_friend.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/groups.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/product.css')}}">
 
 
     <title>@yield('title')</title>
@@ -37,6 +38,9 @@
     {{-- @include('client.blocks.footer'); --}}
     {{-- -------------------- END FOOTER ------------------------ --}}
 
+    {{-- CHAT --}}
+    @include('client.pages.chat');
+    
     <script src="{{asset('assets/js/home.js')}}"></script>
     <script src="{{asset('assets/js/header.js')}}"></script>
     <script src="{{asset('assets/js/image.js')}}"></script>
@@ -45,5 +49,9 @@
     <script src="{{asset('assets/js/like.js')}}"></script>
     <script src="{{asset('assets/js/search.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.js')}}"></script>
+    <script src="{{asset('assets/js/product.js')}}"></script>
+
+    @yield('js-custom');
+
 </body>
 </html>

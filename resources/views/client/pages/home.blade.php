@@ -58,7 +58,7 @@
     <div class="right-sidebar">
 
         {{-- loi moi ket ban --}}
-        {{-- <div class="sidebar-title">
+        <div class="sidebar-title">
             <h4>Lời mời kết bạn</h4>
             <a href="{{ route('requests.friend')}}">Xem thêm</a>
         </div> 
@@ -75,9 +75,9 @@
                     </div>
                 </div>
             </div>    
-        </div> --}}
+        </div>
         {{-- end loi moi ket ban --}}
-        
+        <div class="hr"></div>
         
         <!-- ---- -->
         <div class="sidebar-title">
@@ -99,7 +99,7 @@
                         <img src="{{asset('img/1.jpg')}}">
                     </a>
                 </div>
-                <p>Alison Mina</p>
+                <p onclick="onclickShowChat()">Alison Mina</p>
             </div>
             {{-- end bản chính --}}
 
@@ -109,72 +109,28 @@
                 <div class="online">
                     <img src="{{asset('img/img-2.jpg')}}">
                 </div>
-                <p>Jackson</p>
+                <p onclick="onclickShowChat()">Jackson</p>
             </div>
             <div class="online-list">
                 <div class="online">
                     <img src="{{asset('img/img-2.jpg')}}">
                 </div>
-                <p>Ned</p>
+                <p onclick="onclickShowChat()">Ned</p>
             </div>
             <div class="online-list">
                 <div class="online">
                     <img src="{{asset('img/img-2.jpg')}}">
                 </div>
-                <p>Ned</p>
+                <p onclick="onclickShowChat()">Ned</p>
             </div>
             {{-- end text xoa cai nay --}}
 
         </div>
 
-        <div class="hr"></div>
-        <div class="sidebars_ms">
-            <div class="wrapper_ms">
-                <section class="chat-area">
-                    <header>
-                        {{-- <a href="" class="back-icon"><i class="fas fa-arrow-left"></i></a> --}}
-                        <img src="{{asset('img/user1.webp')}}" alt="">
-                        <div class="details">
-                            <span>Danh Nguyen</span>
-                            <p class="onlines">Đang hoạt động</p>
-                        </div>
-                    </header>
-                    <div class="chat-box">
-                        {{-- minh` --}}
-                        <div class="chat outgoing">
-                            <div class="details">
-                                <p>helo xin chao ban cong danh minh la vo cong ho
-                                    ban chao lai minh di ban cong danh
-                                </p>
-                            </div>
-                        </div>
-                        {{-- ban be   --}}
-                        <div class="chat incoming">
-                            <img src="{{asset('img/user1.webp')}}" alt="">
-                            <div class="details">
-                                <p>helo xin chao ban cong danh minh la vo cong ho
-                                ban chao lai minh di ban cong danh
-                                </p>
-                            </div>
-                        </div> 
-                        {{-- minh` --}}
-                        <div class="chat outgoing">
-                            <div class="details">
-                                <p>helo xin chao ban cong danh minh la vo cong ho
-                                    ban chao lai minh di ban cong danh
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <form action="#" class="typing-area" autocomplete="off">
-                        <input type="text" name="outgoing_id" value="" hidden>
-                        <input type="text" name="incoming_id" value="" hidden>
-                        <input type="text" name="message" class="input-field" placeholder="type a message here...">
-                        <button><i class="fab fa-telegram-plane"></i></button>
-                    </form>
-                </section>
-            </div>
-        </div>
+        
     </div>
 </div>
+
+
+
 @endsection

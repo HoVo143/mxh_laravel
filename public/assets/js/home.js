@@ -66,3 +66,38 @@ function postrighsMenuToggle(){
     
 // }
 
+
+/// file image của chat
+const fileInput = document.querySelector('input[type="file"]');
+const fileButton = document.querySelector('.file-upload');
+  
+fileButton.addEventListener('click', function() {
+    fileInput.click();
+});
+
+
+//click vào bạn bè hiện ô chat
+const showChat = document.getElementById('sidebars_chat');
+
+function onclickShowChat(){
+    showChat.classList.toggle("sidebars_chat_show");
+    
+}
+
+//click hiện ảnh ở ô chat
+var modalChat = document.getElementById("myModal");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img012");
+var captionText = document.getElementById("caption");
+
+img.onclick = function(){
+  modalChat.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close_image")[0];
+
+span.onclick = function() { 
+  modalChat.style.display = "none";
+}

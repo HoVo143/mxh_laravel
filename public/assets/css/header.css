@@ -254,7 +254,7 @@ h1{
 }
 .settings-menu-height{
     max-height: 450px;
-}
+}   
 .user-profile{
     margin-top: 7px;
 }
@@ -533,13 +533,14 @@ h1{
     padding: 5px 25px;
     color: var(--color-color);
 }
-.users .users-list a{
+.users .users-list .content_msr{
     text-decoration: none;
     display: flex;
     align-items: center;
     padding-bottom: 20px;
     justify-content: space-between;
     border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
 }
 .wrapper_ms img{
     object-fit: cover;
@@ -628,24 +629,24 @@ h1{
     border-radius: 5px;
 }
 /* gach duoi */
-.users-list a{
+.users-list .content_msr{
     margin-bottom: 10px;
     page-break-after: 10px;
     border-bottom-color:#f1f1f1 ;
     padding-right: 15px;
 }
-.users-list a:last-child{
+.users-list .content_msr:last-child{
     border: none;
     margin-bottom: 0px;
 }
-.users-list a .content img{
+.users-list .content_msr .content img{
     height: 40px;
     width: 40px;
 }
-.users-list a .content p {
+.users-list .content_msr .content p {
     color: #67676a;
 }
-.users-list a .status-dot > i{
+.users-list .content_msr .status-dot > i{
     background: unset;
     font-size: 12px;
     color: #468669;

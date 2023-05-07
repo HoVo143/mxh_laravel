@@ -6,7 +6,7 @@
         <!-- search-messenger -->
         <div class="container-ms">
             <div class="wrapper_ms">
-                <h3>Messenger</h3>
+                <h3>Tin nhắn</h3>
                 <section class="users">
                     <div class="search_messenger">
                         <span class="text">Chọn 1 người để trò chuyện</span>
@@ -15,22 +15,22 @@
                     </div>
                     <div class="users-list">
                         {{-- 1 --}} 
-                        <a href="{{route('messages.index')}}">
-                            <div class="content">
-                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+                        <div class="content_msr">
+                            <div class="content" onclick="onclickShowChat()">
+                                <img src="{{asset('img/hoa.jpg')}}" alt="">
                                 <div class="details">
-                                    <span>Coding Nepal</span>
-                                    <p>this is test message</p>
+                                    <span>Danh Nguyễn</span>
+                                    <p>Chào bạn êyyy</p>
                                 </div>
                             </div>
                             <div class="status-dot">
                                 <i class="fas fa-circle"></i>
                             </div>
-                        </a>
+                        </div>
 
                         {{-- text --}}
-                        <a href="#">
-                            <div class="content">
+                        <div class="content_msr">
+                            <div class="content" onclick="onclickShowChat()">
                                 <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                 <div class="details">
                                     <span>Coding Nepal</span>
@@ -40,9 +40,9 @@
                             <div class="status-dot">
                                 <i class="fas fa-circle"></i>
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="content">
+                        </div>
+                        <div class="content_msr">
+                            <div class="content" onclick="onclickShowChat()">
                                 <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                 <div class="details">
                                     <span>Coding Nepal</span>
@@ -52,9 +52,9 @@
                             <div class="status-dot">
                                 <i class="fas fa-circle"></i>
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="content">
+                        </div>
+                        <div class="content_msr">
+                            <div class="content" onclick="onclickShowChat()">
                                 <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                 <div class="details">
                                     <span>Coding Nepal</span>
@@ -64,9 +64,9 @@
                             <div class="status-dot">
                                 <i class="fas fa-circle"></i>
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="content">
+                        </div>
+                        <div class="content_msr">
+                            <div class="content" onclick="onclickShowChat()">
                                 <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                 <div class="details">
                                     <span>Coding Nepal</span>
@@ -76,9 +76,9 @@
                             <div class="status-dot">
                                 <i class="fas fa-circle"></i>
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="content">
+                        </div>
+                        <div class="content_msr">
+                            <div class="content" onclick="onclickShowChat()">
                                 <img src="{{asset('img/ho_vo.jpg')}}" alt="">
                                 <div class="details">
                                     <span>Coding Nepal</span>
@@ -88,19 +88,7 @@
                             <div class="status-dot">
                                 <i class="fas fa-circle"></i>
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="content">
-                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
-                                <div class="details">
-                                    <span>Coding Nepal</span>
-                                    <p>this is test message</p>
-                                </div>
-                            </div>
-                            <div class="status-dot">
-                                <i class="fas fa-circle"></i>
-                            </div>
-                        </a>
+                        </div>
                         {{-- end text --}}
                     </div>
                 </section>
