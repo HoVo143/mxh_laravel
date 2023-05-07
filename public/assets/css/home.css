@@ -224,20 +224,23 @@ body{
     right: 0;
     bottom: 5px;
 }
-.online-list{
+.online-lists .online::after{
+    display: none;
+}
+:is(.online-list , .online-lists){
     display: flex;
     align-items:center ;
     margin-bottom: 20px;
     cursor: pointer;
 
 }
-.online-list .online img{
+:is(.online-list , .online-lists) .online img{
     width: 42px;
     height: 42px;
     border-radius: 50%;
     border: 1px solid salmon;
 }
-.online-list .online {
+:is(.online-list , .online-lists) .online {
     margin-right: 15px;
 }
 

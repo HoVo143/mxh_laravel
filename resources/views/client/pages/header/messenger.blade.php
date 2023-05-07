@@ -10,7 +10,7 @@
                 <section class="users">
                     <div class="search_messenger">
                         <span class="text">Chọn 1 người để trò chuyện</span>
-                        <input type="text" name="" id="" placeholder="Tìm kiếm bạn bè...">
+                        <input type="text" name="" id="search-input" placeholder="Tìm kiếm bạn bè...">
                         <button class="btn_messenger"><i class="fas sri fa-search"></i></button>
                     </div>
                     <div class="users-list">

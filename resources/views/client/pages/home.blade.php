@@ -64,7 +64,7 @@
         </div> 
         <div class="add_sidebars">
             <div class="add-sidebar-title">
-                <div class="online-list">
+                <div class="online-lists">
                     <div class="online">
                         <a href="{{route('people.profile')}}"><img src="{{asset('img/user2.png')}}" alt=""></a>
                     </div>
@@ -85,7 +85,7 @@
             <div class="sidebar-search">
                 <div id="search-messenger">
                     <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input type="text" name="" id="search-mes" placeholder="Tìm kiếm bạn bè...">             
+                    <input type="text" name="" id="search-friends-home" placeholder="Tìm kiếm bạn bè...">             
                 </div>
             </div>
         </div>

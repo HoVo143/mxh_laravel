@@ -41,3 +41,20 @@ searchBtn.onclick = () => {
     searchBar.value = "";
 }
   
+
+
+//search ở logo nhắn tin
+const searchInput = document.getElementById('search-input');
+const userList = document.querySelector('.users-list');
+
+searchInput.addEventListener('input', () => {
+  const searchTerm = searchInput.value.toLowerCase();
+
+  for (const user of userList.children) {
+    const userName = user.querySelector('.details > span').textContent.toLowerCase();
+    const userMessage = user.querySelector('.details > p').textContent.toLowerCase();
+    const isMatched = userName.includes(searchTerm) || userMessage.includes(searchTerm);
+    
+    user.style.display = isMatched ? 'flex' : 'none';
+  }
+});

@@ -12,8 +12,8 @@
                 <div class="call_chat">
                     <i class="fa-solid fa-phone-volume"></i>
                 </div>
-                <div class="callvideo_chat">
-                    <i class="fa-solid fa-video old_camera"></i>
+                <div class="callvideo_chat" id="callvideo_chat">
+                    <i class="fa-solid fa-video old_camera" id="show-meet"></i>
                 </div>
                 <div class="close_chat" onclick="onclickShowChat()">
                     <span> &times; </span>
@@ -43,7 +43,7 @@
                     <img src="{{asset('img/user1.webp')}}" alt="" >
                     <div class="details">
                         <div class="sent_image">
-                            <img id="myImg" src="{{asset('img/hoa.jpg')}}" alt="">
+                            <img id="myImg" src="{{asset('img/web-developer.jpg')}}" alt="">
                             {{-- nhấp vào xem ảnh --}}
                             <div id="myModal" class="modal">
                                 <span class="close_image">&times;</span>
@@ -75,14 +75,22 @@
                         </p>
                     </div>
                 </div>
+                
             </div>
+
             <form action="#" class="typing-area" autocomplete="off">
+                {{-- hiện ảnh lên --}}
+                <div id="image-wrappers">
+                    <div class="image-container">
+                        {{-- <i id="close_fileimg" class="fa-solid fa-xmark"></i> --}}
+                    </div>
+                </div>
                 <!-- nút chọn file hình ảnh -->
                 <label class="file-upload">
                     <i class="fa-solid fa-file-image"></i>
-                    <input type="file" class="image_chat" accept=".png, .jpg, .jpeg, .gif">
+                    <input type="file" class="image_chat" id="image-selector" accept=".png, .jpg, .jpeg, .gif">
                 </label>
-
+ 
                 {{-- id bản thân mình nhắn --}}
                 <input type="text" name="outgoing_id" value="" hidden>
                 {{-- end id bản thân mình nhắn --}}
@@ -122,8 +130,45 @@
 .sidebars_chat_show{
     display: block;
 }
+#image-wrappers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* padding: 8px; */
+    position: absolute;
+    z-index: 2;
+    bottom: 65px;
+    width: 95%;
+    height: auto;
+    border-top: 1px solid var(--border-color);
+    background: rgba(0, 0, 0, 0.6);
+}
 
+.image-container {
+    margin-top: 8px;
+    margin-left:10px;
+    margin-bottom:8px;  
+    display: none;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.delete-button {
+  position: absolute;
+  right: 3px;
+  color: 25px;
+  /* background: white; */
+  border: none;
+  cursor: pointer;
+}
 
+.delete-button:hover{
+    opacity: .7;
+}
 .chat-area header{
     position: relative;
     display: flex;

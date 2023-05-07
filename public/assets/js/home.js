@@ -101,3 +101,83 @@ var span = document.getElementsByClassName("close_image")[0];
 span.onclick = function() { 
   modalChat.style.display = "none";
 }
+
+
+
+// hiện ảnh lên thẻ div khi chọn file trên ô chat 
+const imageSelector = document.getElementById('image-selector');
+const imageWrappers = document.getElementById('image-wrappers');
+const maxImages = 2;
+
+imageSelector.addEventListener('change', (event) => {
+//
+  const files = event.target.files;
+  const selectedImages = 0; // Khởi tạo biến đếm số lượng ảnh được chọn
+
+  for (const file of files) {
+    if (selectedImages >= 5) { // Nếu đã chọn đủ 5 ảnh thì không cho chọn thêm
+        break;
+    }
+    const reader = new FileReader();
+
+    reader.addEventListener('load', (event) => {
+        const imageUrl = event.target.result;
+        const imageContainer = document.createElement('div');
+        imageContainer.className = 'image-container';
+        imageContainer.style.display = "block";
+        imageContainer.style.backgroundImage = `url(${imageUrl})`;
+
+        //nut xóa
+        const deleteButton = document.createElement('div');
+        deleteButton.className = 'delete-button';
+        deleteButton.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+        deleteButton.addEventListener('click', () => {
+            imageContainer.remove();
+            selectedImages--; // Giảm biến đếm khi xóa ảnh
+        });
+
+        imageContainer.appendChild(deleteButton);
+        imageWrappers.appendChild(imageContainer);
+        selectedImages++; // Tăng biến đếm khi chọn ảnh mới
+
+    });
+
+    reader.readAsDataURL(file);
+  }
+});
+
+
+
+// tìm kiếm ở bạn bè trong right-sidebar 
+const searchFriendsHome = document.querySelector('#search-friends-home');
+searchFriendsHome.addEventListener('input', handleSearch);
+
+function handleSearch() {
+    const inputs = this.value.toLowerCase();
+    const onlineLists = document.querySelectorAll('.online-list');
+  
+    onlineLists.forEach((onlineList) => {
+      const names = onlineList.querySelector('p').textContent.toLowerCase();
+      const isMatchs = names.includes(inputs);
+  
+      onlineList.style.display = isMatchs ? 'flex' : 'none';
+    });
+  }
+  
+
+  // nhúng google meet vào call video
+  const meetDiv = document.getElementById("callvideo_chat");
+  const showMeetButton = document.getElementById("show-meet");
+  
+  // Nhúng mã nhúng Google Meet vào thẻ div
+  meetDiv.innerHTML = '<iframe src="https://meet.google.com/hqm-ojsu-jrw" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>';
+  
+  // Ẩn thẻ div khi tài khoản Google chưa đăng nhập
+  meetDiv.style.display = "none";
+  
+  // Hiển thị cuộc họp khi nhấn vào nút "Mở cuộc họp"
+  showMeetButton.addEventListener("click", () => {
+    meetDiv.style.display = "block";
+  });
+  
+
