@@ -188,3 +188,39 @@ function handleSearch() {
     }
     slides[slideIndex-1].style.display = "block";  
   }
+
+
+
+  //chuyển ảnh trong bài post
+  let slideIndex1 = 1;
+showSlidesImg(slideIndex1);
+
+function plusSlidesImg(b) {
+  showSlidesImg(slideIndex1 += b);
+}
+
+function currentSlideImg(b) {
+  showSlidesImg(slideIndex1 = b);
+}
+
+function showSlidesImg(b) {
+    let i;
+    let slidesImg = document.getElementsByClassName("mySlides_img");
+    let dots1 = document.getElementsByClassName("demo");
+    if (b > slidesImg.length) 
+    {
+      slideIndex1 = 1
+    }
+    if (b < 1) 
+    {
+      slideIndex1 = slidesImg.length
+    }
+    for (i = 0; i < slidesImg.length; i++) {
+      slidesImg[i].style.display = "none";
+    }
+    for (i = 0; i < dots1.length; i++) {
+      dots1[i].className = dots1[i].className.replace(" active1", "");
+    }
+    slidesImg[slideIndex1-1].style.display = "block";
+    dots1[slideIndex1-1].className += " active1";
+}
