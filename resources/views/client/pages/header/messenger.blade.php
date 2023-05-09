@@ -1,6 +1,7 @@
 <li class="messenger">
     <div class="icon-mes" onclick="messengerMenuToggle()">
         <i class="fa-regular fa-comment-dots"></i>
+        <span class="qty_tn">2</span>
     </div>
     <div class="messenger-menu">
         <!-- search-messenger -->

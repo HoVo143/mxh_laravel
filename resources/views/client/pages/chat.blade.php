@@ -66,7 +66,7 @@
                             {{-- nhấp vào xem ảnh --}}
                             <div id="myModal" class="modal">
                                 <span class="close_image">&times;</span>
-                                <img class="modal-content new" id="img012" id="new">
+                                <img class="modal-content new" id="img012" >
                                 <div id="caption"></div>
                             </div>
                         </div>

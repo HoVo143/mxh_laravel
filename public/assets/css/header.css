@@ -129,6 +129,20 @@ h1{
     top: 0;
     right: 1px;
 }
+.icon-mes{
+    position: relative;
+}
+.qty_tn, .qty_tb{
+    position: absolute;
+    top: 0;
+    left: 37px;
+    text-align: center;
+    background-color: red;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: white;
+}
 .messenger-menu{
     position: absolute;
     width: 100%;
@@ -352,7 +366,7 @@ h1{
 .notification-menu{
     position: absolute;
     width: 90%;
-    max-width: 300px;
+    max-width: 400px;
     background: var(--bg-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
@@ -364,7 +378,7 @@ h1{
     /* border-bottom: 5px solid salmon; */
 }
 .notification-menu-height{
-    max-width: 300px;
+    max-width: 400px;
 }
 .notification-menu-inner {
     margin-top: 35px;

@@ -2,6 +2,7 @@
 <li class="notification">
     <div class="icon-mes " onclick="notificationMenuToggle()">
         <i class="fa-regular fa-bell"></i>
+        <span class="qty_tb">5</span>
     </div>
     <div class="notification-menu">
         <div class="container-ms">

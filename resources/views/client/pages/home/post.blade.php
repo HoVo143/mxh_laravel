@@ -115,115 +115,69 @@
                     <div class="name-cmt">
                         <h4>Bài viết của Hồ Võ</h4>
                     </div>
-                    <form action="">
-                        <div class="view-user">
-                            <!-- text cmt -->
-                            <div class="user-cmt">
-                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
-                                <div class="name-user">
-                                    <div class="user-container">
-                                        <div class="name-user-cmt">
-                                            <h4>Hồ Võ 
-                                                {{-- <span class="time"> 
-                                                    6 hours 
-                                                </span> --}}
-                                            </h4>
-                                            <p class="cmtt">  Mạng xã hội (social network) là
-                                                Một trang web hay nền tảng trực tuyến với rất nhiều dạng thức và tính năng khác nhau,
-                                                 giúp mọi người dễ dàng kết nối từ bất cứ đâu.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="feedback">
-                                        <!-- like -->
-                                        {{-- <div class="like"> <i class="fa-regular fa-heart"></i> <span>100</span> </div>
-                                        <div class="reply"><span>Reply</span> </div>
-                                        <div class="edit" onclick="editbtnMenuToggle()"><span>Edits</span> 
-                                            <div class="edit-right">
-                                                <div class="dropdown">
-                                                    <div class="dropdown-content">
-                                                        <span><i class="fa-solid fa-pen-to-square"></i>Edit</span>
-                                                        <span><i class="fa-solid fa-trash-can"></i>Remove</span>
-                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="time"> <span> 6 hours </span></div> --}}
-                    
-                                        <!-- feedback -->
-                                        {{-- <div class="fee" onclick="document.querySelector('.timess').style.display='block'"> reply
-                                            <div class="timess" id="timess">
-                                                 
-                                                    <div class="feedback-2">
-                                                        <div class="user-cmt-2">
-                                                            <img src="{{asset('img/ho_vo.jpg')}}" alt="">
-                                                            <div class="name-user">
-                                                            <div class="user-container">
-                                                                <div class="name-user-cmt">
-                                                                    <h4>HoVo 
-                                                                        <span class="time"> 
-                                                                            6 hours 
-                                                                        </span>
-                                                                    </h4>
-                                                                    <p class="cmtt">youtube channel to watch more videos on 
-                                                                        website development and UI designs. 
-                                                                    </p>
-                                                                </div>
-                                                                <div class="edit-right">
-                                                                    <div class="dropdown">
-                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                                        <div class="dropdown-content">
-                                                                            <a href="#"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
-                                                                            <a href="#"><i class="fa-solid fa-trash-can"></i>Remove</a>
-                                                                      
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="feedback">
-                                                                <div class="like"> <i class="fa-regular fa-heart"></i> <span>20</span> </div>
-                                                            
-                                                                <div class="fee"> reply </div>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                    <div class="replys-cmt">
-                                                        <div class="icon-cmt">
-                                                            <i class="fa-regular fa-image"></i>
-                                                            <i class="fa-regular fa-face-laugh"></i>
-                                                            <i class="fa-solid fa-camera"></i>
-                                                        </div>
-                                                        <div class="reply-cmt">
-                                                            <img src="{{asset('img/ho_vo.jpg')}}" alt="">
-                                                            <textarea name="" id="" cols="3" rows="1" placeholder="write a comment..."></textarea>
-                                                            <button class="post-btn">Post</button>
-                                                        </div>
-                                                    </div>
-                                            </div> 
-                                        </div> --}}
+                    <div class="wrapper_posts">
+                        <div class="imgs">
+                            <div class="slideshow-container">
 
-                                    </div>
+                                <div class="mySlides">
+                                  <img id="myImg" src="{{asset('img/traicay-1.jpg')}}" alt="">
+                                </div>
+                                
+                                <div class="mySlides">
+                                  <img id="myImg" src="{{asset('img/anhbia.jpg')}}" alt="">
+                                </div>
+                                
+                                <div class="mySlides">
+                                  <img id="myImg" src="{{asset('img/hoa.jpg')}}" alt="">
+                                </div>
+                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1)">❯</a>
+                                </div>
+                                {{-- click xem ảnh --}}
+                                <div id="myModal" class="modal modal_post">
+                                    <span class="close_image">&times;</span>
+                                    <img class="modal-content new new-2" id="img012" >
+                                    <div id="caption"></div>
                                 </div>
                             </div>
-                            
-                        </div>
-                        <div class="replys-cmt">
-                            <div class="icon-cmt">
-                                <i class="fa-regular fa-image"></i>
-                                <i class="fa-regular fa-face-laugh"></i>
-                                <i class="fa-solid fa-camera"></i>
+                        <form action="">
+                            <div class="view-user">
+                                <!-- text cmt -->
+                                <div class="user-cmt">
+                                    <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+                                    <div class="name-user">
+                                        <div class="user-container">
+                                            <div class="name-user-cmt">
+                                                <h4>Hồ Võ 
+                                                    {{-- <span class="time"> 
+                                                        6 hours 
+                                                    </span> --}}
+                                                </h4>
+                                                <p class="cmtt">  Mạng xã hội (social network) là
+                                                    Một trang web hay nền tảng trực tuyến với rất nhiều dạng thức và tính năng khác nhau,
+                                                     giúp mọi người dễ dàng kết nối từ bất cứ đâu.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            <div class="reply-cmt">
-                                <img src="{{asset('img/ho_vo.jpg')}}" alt="">
-                                <textarea name="" id="" cols="3" rows="1" placeholder="Viết bình luận..."></textarea>
-                                <div class="post-btn">Đăng</div>
-             
+                            <div class="replys-cmt">
+                                <div class="icon-cmt">
+                                    <i class="fa-regular fa-image"></i>
+                                    <i class="fa-regular fa-face-laugh"></i>
+                                    <i class="fa-solid fa-camera"></i>
+                                </div>
+                                <div class="reply-cmt">
+                                    <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+                                    <textarea name="" id="" cols="3" rows="1" placeholder="Viết bình luận..."></textarea>
+                                    <div class="post-btn">Đăng</div>
+                 
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -165,19 +165,26 @@ function handleSearch() {
   }
   
 
-  // nhúng google meet vào call video
-  const meetDiv = document.getElementById("callvideo_chat");
-  const showMeetButton = document.getElementById("show-meet");
-  
-  // Nhúng mã nhúng Google Meet vào thẻ div
-  meetDiv.innerHTML = '<iframe src="https://meet.google.com/hqm-ojsu-jrw" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>';
-  
-  // Ẩn thẻ div khi tài khoản Google chưa đăng nhập
-  meetDiv.style.display = "none";
-  
-  // Hiển thị cuộc họp khi nhấn vào nút "Mở cuộc họp"
-  showMeetButton.addEventListener("click", () => {
-    meetDiv.style.display = "block";
-  });
-  
 
+  //chuyển ảnh trong bài comment
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";  
+  }
