@@ -736,7 +736,7 @@ img {vertical-align: middle;}
 
 .cmt-btn form .view-user{
     overflow: auto;
-    width:500px;
+    /* width:500px; */
     height: 450px;
 }
 .view-user::-webkit-scrollbar{

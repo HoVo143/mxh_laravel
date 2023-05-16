@@ -40,8 +40,8 @@ window.onclick = function(event) {
     }
     // comment
     if (event.target == modal) {
-        modal.style.display = "none";
-    }
+      modal.style.display = "none";
+  }
     // albums, mời bb vào group
     if (event.target == clickbtn) {
         clickbtn.style.display = "none";
@@ -107,7 +107,7 @@ span.onclick = function() {
 // hiện ảnh lên thẻ div khi chọn file trên ô chat 
 const imageSelector = document.getElementById('image-selector');
 const imageWrappers = document.getElementById('image-wrappers');
-const maxImages = 2;
+// const maxImages = 1;
 
 imageSelector.addEventListener('change', (event) => {
 //

@@ -1,17 +1,16 @@
-
 <nav>
     <div class="nav-left">
-        <a href="{{ route('home')}}" style="text-decoration: none">
+        <a href="{{ route('home') }}" style="text-decoration: none">
             <h1 class="logo"> Earth
                 {{-- <img src="{{asset('img/logo-no-background.svg')}}" alt=""> --}}
             </h1>
         </a>
         <ul>
-            
+
             {{-- ---------------MESSENGER---------------- --}}
             @include('client.pages.header.messenger')
             {{-- ---------------END MESSENGER---------------- --}}
-            
+
             {{-- ---------------NOTIFICATION-------------- --}}
             @include('client.pages.header.notification')
             {{-- ---------------END NOTIFICATION-------------- --}}
@@ -19,18 +18,18 @@
         </ul>
     </div>
     <div class="nav-right">
-        <div class="search-box"  onclick="document.getElementById('searchss').style.display='block'">
+        <div class="search-box" onclick="document.getElementById('searchss').style.display='block'">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" id="myInput" placeholder="Tìm kiếm..." onkeyup="myFunction()">
         </div>
         <div class="searchss" id="searchss">
             <ul id="myUL">
-                {{--searchs bạn bè --}}
+                {{-- searchs bạn bè --}}
                 <li>
-                    <a href="{{route('people.profile')}}">
+                    <a href="{{ route('people.profile') }}">
                         <div class="searchs_list">
                             <div class="searchs_img">
-                                <img src="{{asset('img/hoa.jpg')}}" alt="">
+                                <img src="{{ asset('img/hoa.jpg') }}" alt="">
                             </div>
                             <div class="searchs_des">
                                 <h5>Công Danh</h5>
@@ -44,10 +43,10 @@
 
                 {{-- searchs nhóm --}}
                 <li>
-                    <a href="{{route('people.profile')}}">
+                    <a href="{{ route('people.profile') }}">
                         <div class="searchs_list">
                             <div class="searchs_img">
-                                <img src="{{asset('img/1.jpg')}}" alt="">
+                                <img src="{{ asset('img/1.jpg') }}" alt="">
                             </div>
                             <div class="searchs_des">
                                 <h5>Nhóm fullstack</h5>
@@ -59,12 +58,12 @@
                 </li>
                 {{-- end searchs nhóm --}}
 
-                {{-- text searchs--}}
+                {{-- text searchs --}}
                 <li>
-                    <a href="{{route('people.profile')}}">
+                    <a href="{{ route('people.profile') }}">
                         <div class="searchs_list">
                             <div class="searchs_img">
-                                <img src="{{asset('img/user-m.png')}}" alt="">
+                                <img src="{{ asset('img/user-m.png') }}" alt="">
                             </div>
                             <div class="searchs_des">
                                 <h5>Công Danh</h5>
@@ -74,12 +73,12 @@
                     </a>
                     <i class="fa-solid fa-xmark"></i>
                 </li>
-                {{-- end text searchs--}}
+                {{-- end text searchs --}}
             </ul>
 
         </div>
         <div class="nav-user-icon" onclick="settingsMenuToggle()">
-            <img src="{{asset('img/ho_vo.jpg')}}" alt="">
+            <img src="{{ asset('img/ho_vo.jpg') }}" alt="">
         </div>
     </div>
     <div class="settings-menu">
@@ -88,24 +87,25 @@
         </label>
         <div class="settings-menu-inner">
             <div class="user-profile">
-                    <img class="" src="{{asset('img/ho_vo.jpg')}}" alt="">
-                    <a href="{{ route('profile')}}" style="text-decoration: none">
-                        <p class="name-profile">Hồ Võ</p>
+                <img class="" src="{{ asset('img/ho_vo.jpg') }}" alt="">
+                <a href="{{ route('profile') }}" style="text-decoration: none">
+                    <p class="name-profile">Hồ Võ</p>
 
-                    </a>
+                </a>
             </div>
             <hr>
             <div class="user-profile">
                 <i class="fa-regular fa-message"></i>
-                    <div>
-                        <p>Đóng góp ý kiến</p>
-                        <a href="#">Giúp chúng tôi cải thiện trang web tốt hơn</a>
-                    </div>
+                <div>
+                    <p>Đóng góp ý kiến</p>
+                    <a href="#">Giúp chúng tôi cải thiện trang web tốt hơn</a>
+                </div>
             </div>
             <hr>
             <div class="settings-links">
                 <i class="fa-solid setting-icon fa-gear"></i>
-                <a href="#">Cài đặt <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="{{ route('setting') }}">Cài đặt <i class="fa-solid fa-chevron-right"></i></a>
+
             </div>
             <div class="settings-links">
                 <i class="fa-solid fa-circle-question"></i>

@@ -40,6 +40,7 @@
 
     {{-- CHAT --}}
     @include('client.pages.chat');
+    {{-- END CHAT --}}
     
     <script src="{{asset('assets/js/home.js')}}"></script>
     <script src="{{asset('assets/js/header.js')}}"></script>

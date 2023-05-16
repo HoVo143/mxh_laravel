@@ -11,3 +11,4 @@ if(password.value !== confirmpassword.value){
     btnSubmit.removeAttribute("disabled",'false');
 }
 }
+

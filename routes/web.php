@@ -4,6 +4,7 @@
 use App\Http\Controllers\FriendController;
 use App\Http\Controllers\FriendPeopleController;
 use App\Http\Controllers\GroupController;
+use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HomeFriendController;
 use App\Http\Controllers\ImageController;
@@ -44,6 +45,9 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
 // home
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+//header
+Route::get('/setting', [HeaderController::class, 'setting'])->name('setting');
 
 //product
 Route::get('/product', [ProductClientController::class, 'index'])->name('home.product');
