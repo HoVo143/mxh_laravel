@@ -97,8 +97,8 @@
             <div class="user-profile">
                 <i class="fa-regular fa-message"></i>
                 <div>
-                    <p>Đóng góp ý kiến</p>
-                    <a href="#">Giúp chúng tôi cải thiện trang web tốt hơn</a>
+                    <a href="{{route('contribute')}}"><p>Đóng góp ý kiến</p></a>
+                    <a href="{{route('contribute')}}">Giúp chúng tôi cải thiện trang web tốt hơn</a>
                 </div>
             </div>
             <hr>
@@ -109,7 +109,7 @@
             </div>
             <div class="settings-links">
                 <i class="fa-solid fa-circle-question"></i>
-                <a href="#">Hỗ trợ<i class="fa-solid fa-chevron-right"></i></a>
+                <a href="{{route('support')}}">Hỗ trợ<i class="fa-solid fa-chevron-right"></i></a>
             </div>
             <!-- <div class="settings-links">
                 <i class="fa-solid fa-moon"></i>

@@ -22,22 +22,6 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 
-// Route::get('/', function () {
-//     return view('client.pages.home');
-// })->name('home');
-
-// Route::get('/profile', function () {
-//     return view('client.pages.profile');
-// })->name('profile');
-
-// Route::get('/login', function () {
-//     return view('client.pages.login');
-// })->name('login');
-
-// Route::get('/register', function () {
-//     return view('client.pages.register');
-// })->name('register');
-
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
@@ -48,6 +32,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 //header
 Route::get('/setting', [HeaderController::class, 'setting'])->name('setting');
+Route::get('/contribute', [HeaderController::class, 'contribute'])->name('contribute'); //đóng góp ys kien
+Route::get('/support', [HeaderController::class, 'support'])->name('support');
+
+
 
 //product
 Route::get('/product', [ProductClientController::class, 'index'])->name('home.product');
